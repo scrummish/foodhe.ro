@@ -1,0 +1,50 @@
+@mixin clearFix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin positionAbsoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+1em = 16px;
+0 - 428px:        Small Phone
+420 - 600px:    Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   Normal styles apply
+1800px + :      Big desktop
+Order: Base & typography > general layout & grid > page layout > components
+*/
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == small-phone {
+        @media only screen and (max-width: 26.75em) { @content }; //428px
+    }
+    @if $breakpoint == medium-phone {
+        @media only screen and (max-width: 32.5em) { @content }; //520px
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content }; //600px
+    }
+    @if $breakpoint == tablet-small {
+        @media only screen and (max-width: 48em) { @content }; //768px
+    }
+    @if $breakpoint == tablet-portrait {
+        @media only screen and (max-width: 56.25em) { @content }; //900px
+    }
+    @if $breakpoint == tablet-landscape {
+        @media only screen and (max-width: 75em) { @content }; //1200px
+    }
+    @if $breakpoint == large-desktop {
+        @media only screen and (min-width: 112.5em) { @content }; //1800
+    }
+}

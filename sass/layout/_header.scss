@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    background: $color-white;
+}
+.hero {
+    background: $color-orange;
+    flex: 1 1 auto;
+    position: relative;
+    z-index: 1;
+}

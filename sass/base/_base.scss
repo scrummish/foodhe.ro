@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px; based on 16px defaults
+
+    // @include responsive(tablet-landscape) { // width < 1200
+    //     font-size: 56.25%; //1 rem = 9px
+    // }
+    
+    // @include responsive(tablet-portrait) { // width < 900
+    //     font-size: 50%; //1 rem = 8px
+    // }
+        
+    // @include responsive(large-desktop) {
+    //     font-size: 75%; //1rem = 12
+    // }
+}
+
+body {
+    background: grey;
+    margin: 0;
+
+    // @include responsive(tablet-portrait) { // width < 900
+    //     padding: 0;
+    // }
+}
