@@ -451,11 +451,11 @@ body {
 header {
   display: flex;
   flex-flow: column;
-  height: 100vh;
   background: #fff; }
 
 .hero {
   background: #ff9251;
   flex: 1 1 auto;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  height: 65rem; }
