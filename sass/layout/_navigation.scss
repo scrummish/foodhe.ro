@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 .nav,
 .nav ul,
 .nav ul li,
@@ -16,13 +15,14 @@
   box-sizing: border-box;
 }
 .nav {
-  font-family: Oswald, Arial, Helvetica, sans-serif;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   z-index: 2;
   padding: 0 10rem;
+  background: $color-white;
+  position: fixed;
+  width: 100%;
 
   @include responsive(tablet-small) {
-    z-index: inherit;
     padding: inherit;
   }
 
@@ -57,7 +57,7 @@
 
   & > ul {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 120rem;
   }
 
   & > ul > li {

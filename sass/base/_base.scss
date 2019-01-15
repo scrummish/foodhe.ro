@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    background: grey;
+    background: $color-offwhite;
     margin: 0;
 
     // @include responsive(tablet-portrait) { // width < 900

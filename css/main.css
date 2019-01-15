@@ -8,7 +8,7 @@
 1800px + :      Big desktop
 Order: Base & typography > general layout & grid > page layout > components
 */
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 *,
 *::after,
 *::before {
@@ -20,8 +20,17 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: grey;
+  background: #f9f9f9;
   margin: 0; }
+
+body {
+  font-family: Oswald, Arial, Helvetica, sans-serif; }
+
+.heading-4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 400;
+  font-size: 1.9rem; }
 
 .bg-video {
   position: absolute;
@@ -36,6 +45,47 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+.features {
+  background: #f9f9f9;
+  grid-column: center-start / center-end;
+  padding: 10rem 0;
+  margin: 0 auto;
+  max-width: 120rem; }
+  @media only screen and (max-width: 75em) {
+    .features {
+      padding: 10rem; } }
+  @media only screen and (max-width: 48em) {
+    .features {
+      padding: 10rem 5rem; } }
+  @supports (display: grid) {
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 6rem;
+      align-items: start; } }
+
+.feature {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem; }
+  @supports (display: grid) {
+    .feature {
+      width: auto;
+      margin-bottom: 0; } }
+  .feature__icon {
+    fill: #ff9251;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem); }
+  .feature__text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem; }
 
 .nav,
 .nav ul,
@@ -54,13 +104,14 @@ body {
   box-sizing: border-box; }
 
 .nav {
-  font-family: Oswald, Arial, Helvetica, sans-serif;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   z-index: 2;
-  padding: 0 10rem; }
+  padding: 0 10rem;
+  background: #fff;
+  position: fixed;
+  width: 100%; }
   @media only screen and (max-width: 48em) {
     .nav {
-      z-index: inherit;
       padding: inherit; } }
   .nav:after,
   .nav > ul:after {
@@ -82,7 +133,7 @@ body {
         vertical-align: middle; }
   .nav > ul {
     margin: 0 auto;
-    max-width: 1200px; }
+    max-width: 120rem; }
   .nav > ul > li {
     float: right;
     height: 7.5rem; }

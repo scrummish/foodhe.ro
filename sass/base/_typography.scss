@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+body {
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+.heading {
+    
+    &-4 {
+        // @extend %heading;
+        color: rgba($color-black, .8);
+        font-family: "Josefin Sans", sans-serif !important;
+        font-weight: 400;
+        font-size: 1.9rem;
+    }
+}
