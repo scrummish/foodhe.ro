@@ -7,9 +7,13 @@ body {
     
     &-4 {
         // @extend %heading;
-        color: rgba($color-black, .8);
+        color: $color-orange;
         font-family: "Josefin Sans", sans-serif !important;
         font-weight: 400;
-        font-size: 1.9rem;
+        font-size: 2.9rem;
+
+        @include responsive(small-phone) {
+            font-size: 2.4rem;
+        }
     }
 }

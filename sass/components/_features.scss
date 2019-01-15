@@ -1,5 +1,5 @@
 .features {
-    background: $color-offwhite;
+    background: $color-white;
     grid-column: center-start / center-end;
     padding: 10rem 0;
     margin: 0 auto;
@@ -10,7 +10,7 @@
     }
 
     @include responsive(tablet-small) {
-        padding: 10rem 5rem;
+        padding: 7rem 2rem;
     }
 
     @supports(display: grid) {
@@ -21,6 +21,7 @@
     }
 }
 .feature {
+    // Incase browser doesnt support grid
     float: left;
     width: 33.3333%;
     margin-bottom: 6rem;
@@ -36,14 +37,23 @@
 
     &__icon {
         fill: $color-orange;
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 5rem;
+        height: 5rem;
         grid-row: 1 / span 2;
         transform: translateY(-1rem);
+
+        @include responsive(small-phone) {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
     }
 
     &__text {
         color: rgba($color-black, .5);
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+
+        @include responsive(small-phone) {
+            font-size: 1.5rem;
+        }
     }
 }
