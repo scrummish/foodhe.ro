@@ -1,7 +1,6 @@
 header {
     display: flex;
     flex-flow: column;
-    // max-height: 100vh;
     background: $color-white;
 }
 .hero {
@@ -10,4 +9,5 @@ header {
     position: relative;
     z-index: 1;
     height: 65rem;
+    max-height: 100vh;
 }
