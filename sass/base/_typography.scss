@@ -4,11 +4,8 @@ body {
     font-family: Oswald, Arial, Helvetica, sans-serif;
 }
 .heading {
-    
-    &-4 {
-        // @extend %heading;
-        color: $color-orange;
-        font-family: "Josefin Sans", sans-serif !important;
+
+    &__4 {
         font-weight: 400;
         font-size: 2.9rem;
 
@@ -16,4 +13,47 @@ body {
             font-size: 2.4rem;
         }
     }
+
+    &--feature {
+        color: $color-orange;
+        font-family: "Josefin Sans", sans-serif;
+
+        & p {
+            color: $color-grey;
+            font-family: Oswald, Arial, Helvetica, sans-serif;
+            font-size: 1.7rem;
+
+            @include responsive(small-phone) {
+                font-size: 1.5rem;
+            }
+        }
+
+        & svg {
+            fill: $color-orange;
+            width: 5rem;
+            height: 5rem;
+            grid-row: 1 / span 2;
+            transform: translateY(-1rem);
+    
+            @include responsive(small-phone) {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
+    }
+}
+
+.heroic-text {
+    color: $color-orange;
+    font-weight: 700;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.author {
+    color: rgb(89, 0, 255);
+    font-weight: 700;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-decoration: none;
 }

@@ -1,0 +1,72 @@
+$padding-landscape: 9rem;
+$padding-portrait: 3rem;
+
+.footer {
+  background: $color-offwhite;
+
+  &__social-icons {
+    
+    a {
+      color: $color-white;
+      font-size: 1.7rem;
+      margin-right: 1rem;
+
+      .facebook {
+        background: #3B5998;
+      }
+      .twitter {
+        background: rgb(80, 166, 233);
+      }
+      .google {
+        background: #DD4B39;
+      }
+    }
+
+    i {
+      height: 4.5rem;
+      width: 4.5rem;
+      text-align: center;
+      line-height: 4.5rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__copyright{
+    @include clearFix;
+
+    background: $color-white;
+    margin: 0 auto;
+    max-width: 120rem;
+
+    p {
+      color: $color-grey;
+      font-size: 1.2rem;
+      padding: 2rem 0;
+
+      @include responsive(tablet-landscape) {
+        padding: 1.7rem $padding-landscape;
+      }
+      @include responsive(tablet-portrait) {
+        padding: 1.5rem $padding-portrait;
+        font-size: 1.2rem;
+      }
+
+    }
+    .left {
+      float: left;
+      width: 50%;
+    }
+    .right {
+      float: left;
+      width: 50%;
+
+      p {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.copy-container {
+  background: $color-white;
+}

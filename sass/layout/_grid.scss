@@ -1,74 +1,73 @@
-// .row {
-//     max-width: $grid-width;
-//     margin: 0 auto;
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
 
-//     &:not(:last-child) { // Every row minus the last one
-//         margin-bottom: $row-space;
+    &:not(:last-child) { // Every row minus the last one
+        // margin-bottom: $row-space;
         
-//         @include responsive(tablet-portrait) { 
-//             margin-bottom: $row-space-small;  
-//         }
-//     }
-//     @include responsive(tablet-portrait) { 
-//         max-width: 50rem;  
-//         padding: 0 3rem;
-//     }
-//     @include clearFix;
+        @include responsive(tablet-portrait) { 
+            // margin-bottom: $row-space-small;  
+        }
+    }
+    @include responsive(tablet-portrait) { 
+        max-width: 78rem;  
+        padding: 0 3rem;
+    }
+    @include clearFix;
 
-//     [class^="col-"] { // Every column 
-//         float: left;
+    [class^="col-"] { // Every column 
+        float: left;
 
-//         &:not(:last-child) { // Except the last column
-//             margin-right: $column-space;
+        &:not(:last-child) { // Except the last column
+            margin-right: $column-space;
 
-//             @include responsive(tablet-portrait) { 
-//                 margin-right: 0;
-//                 margin-bottom: $row-space-small;
-//             }
-//         }
+            @include responsive(tablet-portrait) { 
+                margin-right: 0;
+                margin-bottom: $row-space-small;
+            }
+        }
 
-//         @include responsive(tablet-portrait) { 
-//             width: 100% !important;
-//         }
-//     }
+        @include responsive(tablet-portrait) { 
+            width: 100% !important;
+        }
+    }
 
-//     .col-1-of-1 {
-//         width: 100%;
-//     }
+    .col-1-of-1 {
+        width: 100%;
+    }
 
-//     .col-1-of-2 {
-//         width: calc((100% - #{$column-space}) / 2);
-//     }
+    .col-1-of-2 {
+        width: calc((100% - #{$column-space}) / 2);
+    }
 
-//     .col-2-of-2 {
-//         width: 100%;
-//     }
+    .col-2-of-2 {
+        width: 100%;
+    }
 
-//     .col-1-of-3 {
-//         width: calc((100% - #{$column-space} * 2) / 3);
-//     }
+    .col-1-of-3 {
+        width: calc((100% - #{$column-space} * 2) / 3);
+    }
 
-//     .col-2-of-3 {
-//         width: calc(2 * ((100% - #{$column-space} * 2) / 3) + #{$column-space});
-//     }
+    .col-2-of-3 {
+        width: calc(2 * ((100% - #{$column-space} * 2) / 3) + #{$column-space});
+    }
+    .col-3-of-3 {
+        width: 100%;
+    }
 
-//     .col-3-of-3 {
-//         width: 100%;
-//     }
+    .col-1-of-4 {
+        width: calc((100% - #{$column-space} * 3) / 4);
+    }
 
-//     .col-1-of-4 {
-//         width: calc((100% - #{$column-space} * 3) / 4);
-//     }
+    .col-2-of-4 {
+        width: calc(2 * ((100% - #{$column-space} * 3) / 4) + #{$column-space});
+    }
 
-//     .col-2-of-4 {
-//         width: calc(2 * ((100% - #{$column-space} * 3) / 4) + #{$column-space});
-//     }
+    .col-3-of-4 {
+        width: calc(3 * ((100% - #{$column-space} * 3) / 4) + (#{$column-space} * 2));
+    }
 
-//     .col-3-of-4 {
-//         width: calc(3 * ((100% - #{$column-space} * 3) / 4) + (#{$column-space} * 2));
-//     }
-
-//     .col-4-of-4 {
-//         width: 100%;
-//     }
-// }
+    .col-4-of-4 {
+        width: 100%;
+    }
+}

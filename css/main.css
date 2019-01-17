@@ -26,14 +26,46 @@ body {
 body {
   font-family: Oswald, Arial, Helvetica, sans-serif; }
 
-.heading-4 {
-  color: #ff9251;
-  font-family: "Josefin Sans", sans-serif !important;
+.heading__4 {
   font-weight: 400;
   font-size: 2.9rem; }
   @media only screen and (max-width: 26.75em) {
-    .heading-4 {
+    .heading__4 {
       font-size: 2.4rem; } }
+
+.heading--feature {
+  color: #ff9251;
+  font-family: "Josefin Sans", sans-serif; }
+  .heading--feature p {
+    color: #afb8b7;
+    font-family: Oswald, Arial, Helvetica, sans-serif;
+    font-size: 1.7rem; }
+    @media only screen and (max-width: 26.75em) {
+      .heading--feature p {
+        font-size: 1.5rem; } }
+  .heading--feature svg {
+    fill: #ff9251;
+    width: 5rem;
+    height: 5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem); }
+    @media only screen and (max-width: 26.75em) {
+      .heading--feature svg {
+        width: 3.5rem;
+        height: 3.5rem; } }
+
+.heroic-text {
+  color: #ff9251;
+  font-weight: 700;
+  font-size: 1.2rem;
+  white-space: nowrap; }
+
+.author {
+  color: #5900ff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-decoration: none; }
 
 .bg-video {
   position: absolute;
@@ -80,22 +112,6 @@ body {
     .feature {
       width: auto;
       margin-bottom: 0; } }
-  .feature__icon {
-    fill: #ff9251;
-    width: 5rem;
-    height: 5rem;
-    grid-row: 1 / span 2;
-    transform: translateY(-1rem); }
-    @media only screen and (max-width: 26.75em) {
-      .feature__icon {
-        width: 3.5rem;
-        height: 3.5rem; } }
-  .feature__text {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1.7rem; }
-    @media only screen and (max-width: 26.75em) {
-      .feature__text {
-        font-size: 1.5rem; } }
 
 .nav,
 .nav ul,
@@ -455,3 +471,95 @@ header {
   z-index: 1;
   height: 65rem;
   max-height: 100vh; }
+
+.row {
+  max-width: 120rem;
+  margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 78rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 1rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-1 {
+    width: 100%; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-2-of-2 {
+    width: 100%; }
+  .row .col-1-of-3 {
+    width: calc((100% - 6rem * 2) / 3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 6rem * 2) / 3) + 6rem); }
+  .row .col-3-of-3 {
+    width: 100%; }
+  .row .col-1-of-4 {
+    width: calc((100% - 6rem * 3) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 6rem * 3) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 6rem * 3) / 4) + (6rem * 2)); }
+  .row .col-4-of-4 {
+    width: 100%; }
+
+.footer {
+  background: #f9f9f9; }
+  .footer__social-icons a {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-right: 1rem; }
+    .footer__social-icons a .facebook {
+      background: #3B5998; }
+    .footer__social-icons a .twitter {
+      background: #50a6e9; }
+    .footer__social-icons a .google {
+      background: #DD4B39; }
+  .footer__social-icons i {
+    height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    border-radius: 50%; }
+  .footer__copyright {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 120rem; }
+    .footer__copyright::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .footer__copyright p {
+      color: #afb8b7;
+      font-size: 1.2rem;
+      padding: 2rem 0; }
+      @media only screen and (max-width: 75em) {
+        .footer__copyright p {
+          padding: 1.7rem 9rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .footer__copyright p {
+          padding: 1.5rem 3rem;
+          font-size: 1.2rem; } }
+    .footer__copyright .left {
+      float: left;
+      width: 50%; }
+    .footer__copyright .right {
+      float: left;
+      width: 50%; }
+      .footer__copyright .right p {
+        text-align: right; }
+
+.copy-container {
+  background: #fff; }
