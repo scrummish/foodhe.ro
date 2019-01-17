@@ -3,7 +3,7 @@ $padding-portrait: 3rem;
 $footer-padding: 12rem;
 
 .footer {
-  background: #3a3a3a;
+  background: $color-white;
   padding-top: $footer-padding;
 
   @include responsive(tablet-portrait) { 
@@ -155,7 +155,7 @@ $footer-padding: 12rem;
     max-width: 120rem;
 
     p {
-      color: rgba($color-grey, .5);
+      color: $color-grey;
       font-size: 1rem;
       padding: 2rem 0;
 
@@ -183,5 +183,6 @@ $footer-padding: 12rem;
 }
 
 .copy-container {
-  background: rgba($color-black, .1);;
+  // background: rgba($color-black, .1);
+  background: $color-offwhite;
 }
