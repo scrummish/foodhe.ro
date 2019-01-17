@@ -1,15 +1,126 @@
 $padding-landscape: 9rem;
 $padding-portrait: 3rem;
+$footer-padding: 12rem;
 
 .footer {
-  background: $color-offwhite;
+  background: #3a3a3a;
+  padding-top: $footer-padding;
+
+  @include responsive(tablet-portrait) { 
+    padding-top: 5rem;
+  }
+
+  &__location {
+    position: relative;
+
+    &:after {
+      content: '';
+      border-right: 1px solid $color-grey;
+      display: block;
+      height: 6.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      @include responsive(tablet-portrait) { 
+        border-top: 1px solid $color-grey;
+        width: 6.5rem;
+      }
+      @include responsive(small-phone) { 
+        height: 4.5rem;
+        width: 4.5rem;
+      }
+    }
+  }
+  &__branding {
+    text-align: center;
+
+    @include responsive(tablet-portrait) { 
+      padding: 0 0 3rem 0;
+
+      p {
+        font-size: 1.3rem !important;
+      }
+    }
+  }
+  &__logo {
+    margin: -7rem 0 3rem 0;
+    width: 20rem;
+
+    @include responsive(tablet-portrait) { 
+      margin: 0 0 1.2rem 0;
+      width: 15rem;
+    }
+  }
+
+  .row {
+    @include responsive(tablet-landscape) { 
+      padding: 0 10rem;
+    }
+    @include responsive(tablet-portrait) { 
+      padding: 0 5rem;
+    }
+
+    p {
+      color: $color-grey;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5rem;
+
+      @include responsive(tablet-portrait) { 
+        font-size: 1.3rem;
+      }
+      @include responsive(small-phone) { 
+        font-size: 1.2rem;
+      }
+
+    }
+  }
+
+  &__contacts {
+    text-align: right;
+    position: relative;
+
+    &:after {
+      content: '';
+      border-left: 1px solid $color-grey;
+      display: block;
+      height: 6.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include responsive(tablet-portrait) { 
+        border-bottom: 1px solid $color-grey;
+        width: 6.5rem;
+        bottom: 5rem;
+        top: unset;
+      }
+      @include responsive(small-phone) {
+        bottom: 2rem;
+        height: 4.5rem;
+        width: 4.5rem;
+      }
+    }
+  }
 
   &__social-icons {
-    
+    margin: 2rem 0 5rem 0;
+
+    @include responsive(small-phone) {
+      margin-bottom: 2rem;
+    }
+
     a {
       color: $color-white;
       font-size: 1.7rem;
-      margin-right: 1rem;
+
+      @include responsive(small-phone) {
+        font-size: 1.3rem;
+      }
+
+      &:not(:last-child) { // Except the last column
+        margin-right: 1rem;
+      }
 
       .facebook {
         background: #3B5998;
@@ -28,19 +139,24 @@ $padding-portrait: 3rem;
       text-align: center;
       line-height: 4.5rem;
       border-radius: 50%;
+
+      @include responsive(small-phone) {
+        height: 3rem;
+        width: 3rem;
+        line-height: 3.1rem;
+      }
     }
   }
 
   &__copyright{
     @include clearFix;
 
-    background: $color-white;
     margin: 0 auto;
     max-width: 120rem;
 
     p {
-      color: $color-grey;
-      font-size: 1.2rem;
+      color: rgba($color-grey, .5);
+      font-size: 1rem;
       padding: 2rem 0;
 
       @include responsive(tablet-landscape) {
@@ -48,7 +164,6 @@ $padding-portrait: 3rem;
       }
       @include responsive(tablet-portrait) {
         padding: 1.5rem $padding-portrait;
-        font-size: 1.2rem;
       }
 
     }
@@ -68,5 +183,5 @@ $padding-portrait: 3rem;
 }
 
 .copy-container {
-  background: $color-white;
+  background: rgba($color-black, .1);;
 }

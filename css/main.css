@@ -27,11 +27,20 @@ body {
   font-family: Oswald, Arial, Helvetica, sans-serif; }
 
 .heading__4 {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 2.9rem; }
   @media only screen and (max-width: 26.75em) {
     .heading__4 {
       font-size: 2.4rem; } }
+
+.heading__6 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 2.2rem;
+  padding-bottom: 1rem; }
+  @media only screen and (max-width: 26.75em) {
+    .heading__6 {
+      font-size: 2rem; } }
 
 .heading--feature {
   color: #ff9251;
@@ -516,25 +525,112 @@ header {
     width: 100%; }
 
 .footer {
-  background: #f9f9f9; }
-  .footer__social-icons a {
-    color: #fff;
-    font-size: 1.7rem;
-    margin-right: 1rem; }
-    .footer__social-icons a .facebook {
-      background: #3B5998; }
-    .footer__social-icons a .twitter {
-      background: #50a6e9; }
-    .footer__social-icons a .google {
-      background: #DD4B39; }
-  .footer__social-icons i {
-    height: 4.5rem;
-    width: 4.5rem;
-    text-align: center;
-    line-height: 4.5rem;
-    border-radius: 50%; }
+  background: #3a3a3a;
+  padding-top: 12rem; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding-top: 5rem; } }
+  .footer__location {
+    position: relative; }
+    .footer__location:after {
+      content: '';
+      border-right: 1px solid #afb8b7;
+      display: block;
+      height: 6.5rem;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__location:after {
+          border-top: 1px solid #afb8b7;
+          width: 6.5rem; } }
+      @media only screen and (max-width: 26.75em) {
+        .footer__location:after {
+          height: 4.5rem;
+          width: 4.5rem; } }
+  .footer__branding {
+    text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__branding {
+        padding: 0 0 3rem 0; }
+        .footer__branding p {
+          font-size: 1.3rem !important; } }
+  .footer__logo {
+    margin: -7rem 0 3rem 0;
+    width: 20rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo {
+        margin: 0 0 1.2rem 0;
+        width: 15rem; } }
+  @media only screen and (max-width: 75em) {
+    .footer .row {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer .row {
+      padding: 0 5rem; } }
+  .footer .row p {
+    color: #afb8b7;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer .row p {
+        font-size: 1.3rem; } }
+    @media only screen and (max-width: 26.75em) {
+      .footer .row p {
+        font-size: 1.2rem; } }
+  .footer__contacts {
+    text-align: right;
+    position: relative; }
+    .footer__contacts:after {
+      content: '';
+      border-left: 1px solid #afb8b7;
+      display: block;
+      height: 6.5rem;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__contacts:after {
+          border-bottom: 1px solid #afb8b7;
+          width: 6.5rem;
+          bottom: 5rem;
+          top: unset; } }
+      @media only screen and (max-width: 26.75em) {
+        .footer__contacts:after {
+          bottom: 2rem;
+          height: 4.5rem;
+          width: 4.5rem; } }
+  .footer__social-icons {
+    margin: 2rem 0 5rem 0; }
+    @media only screen and (max-width: 26.75em) {
+      .footer__social-icons {
+        margin-bottom: 2rem; } }
+    .footer__social-icons a {
+      color: #fff;
+      font-size: 1.7rem; }
+      @media only screen and (max-width: 26.75em) {
+        .footer__social-icons a {
+          font-size: 1.3rem; } }
+      .footer__social-icons a:not(:last-child) {
+        margin-right: 1rem; }
+      .footer__social-icons a .facebook {
+        background: #3B5998; }
+      .footer__social-icons a .twitter {
+        background: #50a6e9; }
+      .footer__social-icons a .google {
+        background: #DD4B39; }
+    .footer__social-icons i {
+      height: 4.5rem;
+      width: 4.5rem;
+      text-align: center;
+      line-height: 4.5rem;
+      border-radius: 50%; }
+      @media only screen and (max-width: 26.75em) {
+        .footer__social-icons i {
+          height: 3rem;
+          width: 3rem;
+          line-height: 3.1rem; } }
   .footer__copyright {
-    background: #fff;
     margin: 0 auto;
     max-width: 120rem; }
     .footer__copyright::after {
@@ -542,16 +638,15 @@ header {
       display: table;
       clear: both; }
     .footer__copyright p {
-      color: #afb8b7;
-      font-size: 1.2rem;
+      color: rgba(175, 184, 183, 0.5);
+      font-size: 1rem;
       padding: 2rem 0; }
       @media only screen and (max-width: 75em) {
         .footer__copyright p {
           padding: 1.7rem 9rem; } }
       @media only screen and (max-width: 56.25em) {
         .footer__copyright p {
-          padding: 1.5rem 3rem;
-          font-size: 1.2rem; } }
+          padding: 1.5rem 3rem; } }
     .footer__copyright .left {
       float: left;
       width: 50%; }
@@ -562,4 +657,4 @@ header {
         text-align: right; }
 
 .copy-container {
-  background: #fff; }
+  background: rgba(0, 0, 0, 0.1); }
