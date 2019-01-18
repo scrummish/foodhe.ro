@@ -6,10 +6,13 @@
     /*grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 5vw);*/
     grid-template: repeat(7, 5vw) / repeat(8, 1fr);
-
-
     grid-gap: 1.5rem;
     padding: 1.5rem;
+
+    @include responsive(small-phone) { 
+        grid-gap: .5rem;
+        padding: .5rem;
+    }
 
     &__about-us {
         color: $color-white;
@@ -19,6 +22,25 @@
         font-size: 3rem;
         font-family: "Josefin Sans", sans-serif;
         overflow: auto;
+
+        @include responsive(small-phone) { 
+            padding: 1rem;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        span {
+            display: none;
+
+            @include responsive(small-phone) { 
+                display: block;
+            }
+        }
+        p {
+            @include responsive(small-phone) { 
+                display: none;
+            }
+        }
     }
 
     &__item {

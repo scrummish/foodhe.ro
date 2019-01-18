@@ -28,7 +28,7 @@ body {
 
 .heading__3 {
   color: #afb8b7;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold; }
 
 .heading__4 {
@@ -83,6 +83,12 @@ body {
 
 .orange {
   color: #ff9251; }
+
+.grey {
+  color: #afb8b7; }
+
+.padding-top-small {
+  padding-top: .7rem; }
 
 .bg-video {
   position: absolute;
@@ -687,6 +693,10 @@ header {
   grid-template: repeat(7, 5vw)/repeat(8, 1fr);
   grid-gap: 1.5rem;
   padding: 1.5rem; }
+  @media only screen and (max-width: 26.75em) {
+    .gallery {
+      grid-gap: .5rem;
+      padding: .5rem; } }
   .gallery__about-us {
     color: #fff;
     background: #ff9251;
@@ -695,6 +705,19 @@ header {
     font-size: 3rem;
     font-family: "Josefin Sans", sans-serif;
     overflow: auto; }
+    @media only screen and (max-width: 26.75em) {
+      .gallery__about-us {
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: center; } }
+    .gallery__about-us span {
+      display: none; }
+      @media only screen and (max-width: 26.75em) {
+        .gallery__about-us span {
+          display: block; } }
+    @media only screen and (max-width: 26.75em) {
+      .gallery__about-us p {
+        display: none; } }
   .gallery__item--1 {
     grid-row: 1 / span 2;
     grid-column: 1 / span 2; }
@@ -738,3 +761,6 @@ header {
   background: #f7f7f7;
   text-align: center;
   padding: 2rem 0 0 0; }
+  @media only screen and (max-width: 26.75em) {
+    .about-us {
+      display: none; } }

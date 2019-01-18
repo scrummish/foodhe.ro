@@ -2,4 +2,8 @@
     background: $color-offwhite;
     text-align: center;
     padding: 2rem 0 0 0;
+
+    @include responsive(small-phone) { 
+        display: none;
+    }
 }
