@@ -1,13 +1,13 @@
 $padding-landscape: 9rem;
 $padding-portrait: 3rem;
-$footer-padding: 12rem;
+$footer-padding: 10rem;
 
 .footer {
   background: $color-white;
-  padding-top: $footer-padding;
+  padding: $footer-padding 0 2rem 0;
 
   @include responsive(tablet-portrait) { 
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   &__location {
@@ -58,7 +58,8 @@ $footer-padding: 12rem;
       padding: 0 10rem;
     }
     @include responsive(tablet-portrait) { 
-      padding: 0 5rem;
+      max-width: 100%;
+      padding: 0 3.3rem;
     }
 
     p {
@@ -80,6 +81,22 @@ $footer-padding: 12rem;
     text-align: right;
     position: relative;
 
+    @include responsive(small-phone) { 
+      text-align: center;
+
+      &:before {
+        content: '';
+        border-right: 1px solid $color-grey;
+        border-bottom: 1px solid $color-grey;
+        display: block;
+        height: 6.5rem;
+        width: 4.5rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
     &:after {
       content: '';
       border-left: 1px solid $color-grey;
@@ -92,11 +109,10 @@ $footer-padding: 12rem;
       @include responsive(tablet-portrait) { 
         border-bottom: 1px solid $color-grey;
         width: 6.5rem;
-        bottom: 5rem;
+        bottom: 0;
         top: unset;
       }
       @include responsive(small-phone) {
-        bottom: 2rem;
         height: 4.5rem;
         width: 4.5rem;
       }
@@ -104,11 +120,7 @@ $footer-padding: 12rem;
   }
 
   &__social-icons {
-    margin: 2rem 0 5rem 0;
-
-    @include responsive(small-phone) {
-      margin-bottom: 2rem;
-    }
+    margin: 1rem 0 0 0;
 
     a {
       color: $color-white;
@@ -147,42 +159,41 @@ $footer-padding: 12rem;
       }
     }
   }
-
-  &__copyright{
-    @include clearFix;
-
-    margin: 0 auto;
-    max-width: 120rem;
-
-    p {
-      color: $color-grey;
-      font-size: 1rem;
-      padding: 2rem 0;
-
-      @include responsive(tablet-landscape) {
-        padding: 1.7rem $padding-landscape;
-      }
-      @include responsive(tablet-portrait) {
-        padding: 1.5rem $padding-portrait;
-      }
-
-    }
-    .left {
-      float: left;
-      width: 50%;
-    }
-    .right {
-      float: left;
-      width: 50%;
-
-      p {
-        text-align: right;
-      }
-    }
-  }
 }
 
 .copy-container {
-  // background: rgba($color-black, .1);
   background: $color-offwhite;
+}
+
+.footer__copyright{
+  @include clearFix;
+
+  margin: 0 auto;
+  max-width: 120rem;
+
+  p {
+    color: $color-grey;
+    font-size: 1rem;
+    padding: 2rem 0;
+
+    @include responsive(tablet-landscape) {
+      padding: 1.7rem $padding-landscape;
+    }
+    @include responsive(tablet-portrait) {
+      padding: 1.5rem $padding-portrait;
+    }
+
+  }
+  .left {
+    float: left;
+    width: 50%;
+  }
+  .right {
+    float: left;
+    width: 50%;
+
+    p {
+      text-align: right;
+    }
+  }
 }
