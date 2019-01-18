@@ -7,3 +7,32 @@
         display: none;
     }
 }
+
+.features-title {
+    color: rgba($color-black, .6);
+    text-align: center;
+    padding-top: 8rem;
+    max-width: 70rem;
+    margin: 0 auto;
+
+    h4 {
+        color: $color-black;
+        font-size: 3rem;
+        padding: 0 0 1rem 0;
+    }
+    p {
+        line-height: 2.3rem;
+        font-size: 1.4rem;
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 5rem;
+            border-bottom: 2px solid $color-orange;
+            position: absolute;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

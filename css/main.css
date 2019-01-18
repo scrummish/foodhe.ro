@@ -29,9 +29,9 @@ body {
   font-family: Oswald, Arial, Helvetica, sans-serif; }
 
 .heading__3 {
-  color: #afb8b7;
-  font-size: 3rem;
-  font-weight: bold; }
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.6rem;
+  padding: 0 0 1rem 0; }
 
 .heading__4 {
   color: #000;
@@ -68,8 +68,12 @@ body {
   transform: translateY(-1rem);
   box-shadow: 0 0 3pt 2pt #ff9251;
   margin-top: 1.9rem; }
+  @media only screen and (max-width: 32.5em) {
+    .heading--feature svg {
+      padding: 1rem; } }
   @media only screen and (max-width: 26.75em) {
     .heading--feature svg {
+      padding: .5rem;
       width: 3.5rem;
       height: 3.5rem; } }
 
@@ -772,3 +776,26 @@ header {
   @media only screen and (max-width: 26.75em) {
     .about-us {
       display: none; } }
+
+.features-title {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding-top: 8rem;
+  max-width: 70rem;
+  margin: 0 auto; }
+  .features-title h4 {
+    color: #000;
+    font-size: 3rem;
+    padding: 0 0 1rem 0; }
+  .features-title p {
+    line-height: 2.3rem;
+    font-size: 1.4rem;
+    position: relative; }
+    .features-title p:after {
+      content: '';
+      width: 5rem;
+      border-bottom: 2px solid #ff9251;
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%); }

@@ -2,11 +2,10 @@ body {
     font-family: Oswald, Arial, Helvetica, sans-serif;
 }
 .heading {
-
     &__3 {
-        color: $color-grey;
-        font-size: 3rem;
-        font-weight: bold;
+        color: rgba($color-black, .6);
+        font-size: 1.6rem;
+        padding: 0 0 1rem 0;
     }
 
     &__4 {
@@ -52,7 +51,11 @@ body {
             box-shadow: 0 0 3pt 2pt $color-orange;
             margin-top: 1.9rem;
     
+            @include responsive(medium-phone) {
+                padding: 1rem;
+            }
             @include responsive(small-phone) {
+                padding: .5rem;
                 width: 3.5rem;
                 height: 3.5rem;
             }
