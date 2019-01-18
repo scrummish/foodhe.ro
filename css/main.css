@@ -26,6 +26,11 @@ body {
 body {
   font-family: Oswald, Arial, Helvetica, sans-serif; }
 
+.heading__2 {
+  color: #afb8b7;
+  font-size: 3.5rem;
+  font-weight: bold; }
+
 .heading__4 {
   font-weight: bold;
   font-size: 2.9rem; }
@@ -668,6 +673,14 @@ header {
   grid-template: repeat(7, 5vw)/repeat(8, 1fr);
   grid-gap: 1.5rem;
   padding: 1.5rem; }
+  .gallery__about-us {
+    color: #fff;
+    background: #ff9251;
+    height: 100%;
+    padding: 3rem;
+    font-size: 3rem;
+    font-family: "Josefin Sans", sans-serif;
+    overflow: auto; }
   .gallery__item--1 {
     grid-row: 1 / span 2;
     grid-column: 1 / span 2; }
@@ -715,3 +728,8 @@ header {
     height: 100%;
     object-fit: cover;
     display: block; }
+
+.about-us {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 5rem 0 1rem 0; }

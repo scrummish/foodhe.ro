@@ -11,6 +11,16 @@
     grid-gap: 1.5rem;
     padding: 1.5rem;
 
+    &__about-us {
+        color: $color-white;
+        background: $color-orange;
+        height: 100%;
+        padding: 3rem;
+        font-size: 3rem;
+        font-family: "Josefin Sans", sans-serif;
+        overflow: auto;
+    }
+
     &__item {
         &--1 {
             grid-row: 1 / span 2;
