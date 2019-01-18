@@ -17,16 +17,12 @@ html {
     //     font-size: 50%; //1 rem = 8px
     // }
         
-    // @include responsive(large-desktop) {
-    //     font-size: 75%; //1rem = 12
-    // }
+    @include responsive(large-desktop) {
+        font-size: 75%; //1rem = 12
+    }
 }
 
 body {
-    background: $color-white;
+    background: $color-offwhite;
     margin: 0;
-
-    // @include responsive(tablet-portrait) { // width < 900
-    //     padding: 0;
-    // }
 }

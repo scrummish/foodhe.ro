@@ -8,7 +8,6 @@
 1800px + :      Big desktop
 Order: Base & typography > general layout & grid > page layout > components
 */
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 *,
 *::after,
 *::before {
@@ -18,9 +17,12 @@ Order: Base & typography > general layout & grid > page layout > components
 
 html {
   font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  background: #fff;
+  background: #f7f7f7;
   margin: 0; }
 
 body {
@@ -32,8 +34,9 @@ body {
   font-weight: bold; }
 
 .heading__4 {
+  color: #000;
   font-weight: bold;
-  font-size: 2.9rem; }
+  font-size: 2.1rem; }
   @media only screen and (max-width: 26.75em) {
     .heading__4 {
       font-size: 2.4rem; } }
@@ -47,26 +50,28 @@ body {
     .heading__6 {
       font-size: 2rem; } }
 
-.heading--feature {
-  color: #ff9251;
-  font-family: "Josefin Sans", sans-serif; }
-  .heading--feature p {
-    color: #afb8b7;
-    font-family: Oswald, Arial, Helvetica, sans-serif;
-    font-size: 1.7rem; }
-    @media only screen and (max-width: 26.75em) {
-      .heading--feature p {
-        font-size: 1.5rem; } }
-  .heading--feature svg {
-    fill: #ff9251;
-    width: 5rem;
-    height: 5rem;
-    grid-row: 1 / span 2;
-    transform: translateY(-1rem); }
-    @media only screen and (max-width: 26.75em) {
-      .heading--feature svg {
-        width: 3.5rem;
-        height: 3.5rem; } }
+.heading--feature p {
+  color: #afb8b7;
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 26.75em) {
+    .heading--feature p {
+      font-size: 1.5rem; } }
+
+.heading--feature svg {
+  border-radius: 50%;
+  background: #fff;
+  fill: #ff9251;
+  width: 7.5rem;
+  height: 7.5rem;
+  grid-row: 1 / span 2;
+  padding: 1.6rem;
+  transform: translateY(-1rem);
+  box-shadow: 0 0 3pt 2pt #ff9251;
+  margin-top: 1.9rem; }
+  @media only screen and (max-width: 26.75em) {
+    .heading--feature svg {
+      width: 3.5rem;
+      height: 3.5rem; } }
 
 .heroic-text {
   color: #ff9251;
@@ -105,7 +110,7 @@ body {
     object-fit: cover; }
 
 .features {
-  background: #fff;
+  background: #f7f7f7;
   grid-column: center-start / center-end;
   padding: 10rem 0;
   margin: 0 auto;
@@ -119,9 +124,12 @@ body {
   @supports (display: grid) {
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
       grid-gap: 6rem;
-      align-items: start; } }
+      align-items: start; }
+      @media only screen and (max-width: 56.25em) {
+        .features {
+          grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); } } }
 
 .feature {
   float: left;
@@ -685,7 +693,7 @@ header {
       text-align: right; }
 
 .gallery {
-  background-color: #f7f7f7;
+  background-color: #fff;
   grid-column: full-start / full-end;
   display: grid;
   /*grid-template-columns: repeat(8, 1fr);
@@ -758,7 +766,7 @@ header {
     display: block; }
 
 .about-us {
-  background: #f7f7f7;
+  background: #fff;
   text-align: center;
   padding: 2rem 0 0 0; }
   @media only screen and (max-width: 26.75em) {

@@ -1,5 +1,5 @@
 .features {
-    background: $color-white;
+    background: $color-offwhite;
     grid-column: center-start / center-end;
     padding: 10rem 0;
     margin: 0 auto;
@@ -15,9 +15,13 @@
 
     @supports(display: grid) {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
         grid-gap: 6rem;
         align-items: start;
+
+        @include responsive(tablet-portrait) {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        }
     }
 }
 .feature {
