@@ -105,9 +105,8 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 2;
-  opacity: .8;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: .5; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -499,14 +498,6 @@ header {
   flex-flow: column;
   background: #fff; }
 
-.hero {
-  background: #ff9251;
-  flex: 1 1 auto;
-  position: relative;
-  z-index: 1;
-  height: 65rem;
-  max-height: 100vh; }
-
 .row {
   max-width: 120rem;
   margin: 0 auto; }
@@ -768,6 +759,40 @@ header {
     height: 100%;
     object-fit: cover;
     display: block; }
+
+.hero {
+  background: #000;
+  flex: 1 1 auto;
+  position: relative;
+  z-index: 1;
+  height: 65rem;
+  max-height: 100vh; }
+  .hero__title {
+    color: #afb8b7;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .hero__title h1 {
+      display: block;
+      color: #ff9251;
+      font-weight: bold;
+      font-size: 3.5rem;
+      padding: .5rem 0;
+      text-transform: uppercase;
+      z-index: 10; }
+      @media only screen and (max-width: 48em) {
+        .hero__title h1 {
+          font-size: 2rem; } }
+    .hero__title h2 {
+      display: inline-block;
+      color: #fff;
+      line-height: 1.6rem;
+      font-size: 1.6rem;
+      font-weight: bold;
+      padding: 1rem 0; }
 
 .about-us {
   background: #fff;

@@ -3,11 +3,3 @@ header {
     flex-flow: column;
     background: $color-white;
 }
-.hero {
-    background: $color-orange;
-    flex: 1 1 auto;
-    position: relative;
-    z-index: 1;
-    height: 65rem;
-    max-height: 100vh;
-}
