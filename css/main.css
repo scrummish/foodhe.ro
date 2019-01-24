@@ -830,5 +830,25 @@ header {
       transform: translateX(-50%); }
 
 .sponsors {
-  background: #ff9251;
-  height: 20rem; }
+  background: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100vw; }
+  .sponsors__sponsor {
+    display: inline-block;
+    width: calc(90% / 6); }
+    @media only screen and (max-width: 56.25em) {
+      .sponsors__sponsor {
+        margin-bottom: 3rem;
+        width: calc(90% / 3); } }
+    @media only screen and (max-width: 48em) {
+      .sponsors__sponsor {
+        width: calc(90% / 2); } }
+    @media only screen and (max-width: 32.5em) {
+      .sponsors__sponsor {
+        margin-bottom: 1rem;
+        width: 90%; } }
+    .sponsors__sponsor img {
+      width: 80%; }
+    .sponsors__sponsor .middle {
+      padding-bottom: 5rem; }

@@ -77,6 +77,35 @@
     }
 }
 .sponsors {
-    background: $color-orange;
-    height: 20rem;
+    background: $color-white;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100vw;
+
+    &__sponsor {
+        display: inline-block;
+        width: calc(90% / 6);
+
+        @include responsive(tablet-portrait) {
+            margin-bottom: 3rem;
+            width: calc(90% / 3);
+        }
+        @include responsive(tablet-small) {
+            width: calc(90% / 2);
+        }
+        @include responsive(medium-phone) {
+            margin-bottom: 1rem;
+            width: 90%;
+        }
+
+        img {
+            width: 80%
+        }
+
+        .middle {
+            padding-bottom: 5rem;
+
+
+        }
+    }
 }
