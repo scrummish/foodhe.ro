@@ -127,7 +127,7 @@ body {
   @supports (display: grid) {
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
       grid-gap: 6rem;
       align-items: start; }
       @media only screen and (max-width: 56.25em) {
@@ -136,12 +136,14 @@ body {
 
 .feature {
   float: left;
-  width: 33.3333%;
+  width: 49%;
   margin-bottom: 6rem;
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
+  .feature span {
+    display: block; }
   @supports (display: grid) {
     .feature {
       width: auto;
@@ -688,7 +690,7 @@ header {
       text-align: right; }
 
 .gallery {
-  background-color: #fff;
+  background-color: #f7f7f7;
   grid-column: full-start / full-end;
   display: grid;
   /*grid-template-columns: repeat(8, 1fr);
@@ -795,9 +797,9 @@ header {
       padding: 1rem 0; }
 
 .about-us {
-  background: #fff;
+  background: #f7f7f7;
   text-align: center;
-  padding: 2rem 0 0 0; }
+  padding: 7.5rem 0 0 0; }
   @media only screen and (max-width: 26.75em) {
     .about-us {
       display: none; } }
@@ -824,3 +826,7 @@ header {
       bottom: -2rem;
       left: 50%;
       transform: translateX(-50%); }
+
+.sponsors {
+  background: #ff9251;
+  height: 20rem; }

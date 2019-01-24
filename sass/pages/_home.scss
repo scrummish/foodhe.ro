@@ -40,15 +40,14 @@
 }
 
 .about-us {
-    background: $color-white;
+    background: $color-offwhite;
     text-align: center;
-    padding: 2rem 0 0 0;
+    padding: 7.5rem 0 0 0;
 
     @include responsive(small-phone) { 
         display: none;
     }
 }
-
 .features-title {
     color: rgba($color-black, .6);
     text-align: center;
@@ -76,4 +75,8 @@
             transform: translateX(-50%);
         }
     }
+}
+.sponsors {
+    background: $color-orange;
+    height: 20rem;
 }
