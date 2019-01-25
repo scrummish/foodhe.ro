@@ -13,8 +13,8 @@ body {
         font-weight: bold;
         font-size: 2.1rem;
 
-        @include responsive(small-phone) {
-            font-size: 2.4rem;
+        @include responsive(medium-phone) {
+            font-size: 2rem;
         }
     }
 
