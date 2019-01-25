@@ -779,6 +779,9 @@ header {
     width: 100%;
     margin: 0 auto;
     text-align: center; }
+    @media only screen and (max-width: 32.5em) {
+      .hero__title {
+        padding: 3rem; } }
     .hero__title h1 {
       display: block;
       color: #ff9251;
@@ -790,6 +793,9 @@ header {
       @media only screen and (max-width: 48em) {
         .hero__title h1 {
           font-size: 2rem; } }
+      @media only screen and (max-width: 32.5em) {
+        .hero__title h1 {
+          font-size: 1.6rem; } }
     .hero__title h2 {
       display: inline-block;
       color: #fff;
@@ -797,6 +803,9 @@ header {
       font-size: 1.6rem;
       font-weight: bold;
       padding: 1rem 0; }
+      @media only screen and (max-width: 32.5em) {
+        .hero__title h2 {
+          font-size: 1.2rem; } }
 
 .about-us {
   background: #f7f7f7;
