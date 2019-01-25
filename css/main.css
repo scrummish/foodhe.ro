@@ -771,6 +771,9 @@ header {
   z-index: 1;
   height: 65rem;
   max-height: 100vh; }
+  @media only screen and (max-width: 32.5em) {
+    .hero {
+      height: 100vh; } }
   .hero__title {
     color: #afb8b7;
     position: absolute;

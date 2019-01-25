@@ -6,6 +6,10 @@
     height: 65rem;
     max-height: 100vh;
 
+    @include responsive(medium-phone) { 
+        height: 100vh;
+    }
+
     &__title {
         color: $color-grey;
         position: absolute;
