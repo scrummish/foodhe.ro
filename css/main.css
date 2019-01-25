@@ -574,7 +574,7 @@ header {
         .footer__branding p {
           font-size: 1.3rem !important; } }
   .footer__logo {
-    margin: -7rem 0 3rem 0;
+    margin: -7rem 0 1rem 0;
     width: 20rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__logo {
@@ -717,6 +717,8 @@ header {
         padding: 1rem;
         font-size: 1.2rem;
         text-align: center; } }
+    .gallery__about-us i {
+      color: #000; }
     .gallery__about-us span {
       display: none; }
       @media only screen and (max-width: 26.75em) {
@@ -784,7 +786,8 @@ header {
     text-align: center; }
     @media only screen and (max-width: 32.5em) {
       .hero__title {
-        padding: 3rem; } }
+        padding: 3rem;
+        text-align: left; } }
     .hero__title h1 {
       display: block;
       color: #ff9251;

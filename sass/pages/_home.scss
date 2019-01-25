@@ -21,6 +21,7 @@
 
         @include responsive(medium-phone) { 
             padding: 3rem;
+            text-align: left;
         }
 
         h1 {
