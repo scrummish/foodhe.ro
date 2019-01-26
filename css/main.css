@@ -817,20 +817,23 @@ header {
 .about-us {
   background: #f7f7f7;
   text-align: center;
-  padding: 7.5rem 0 0 0; }
+  padding: 10rem 0 0 0; }
   @media only screen and (max-width: 26.75em) {
     .about-us {
+      padding: 5rem 0 0 0; } }
+  @media only screen and (max-width: 26.75em) {
+    .about-us h3 {
       display: none; } }
 
 .features-title {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
-  padding-top: 8rem;
+  padding-top: 10rem;
   max-width: 70rem;
   margin: 0 auto; }
   @media only screen and (max-width: 32.5em) {
     .features-title {
-      padding: 4rem 3rem 0 3rem; } }
+      padding: 6.5rem 3rem 0 3rem; } }
   .features-title h4 {
     color: #000;
     font-size: 3rem;

@@ -55,25 +55,30 @@
         }
     }
 }
-
 .about-us {
     background: $color-offwhite;
     text-align: center;
-    padding: 7.5rem 0 0 0;
+    padding: 10rem 0 0 0;
 
     @include responsive(small-phone) { 
-        display: none;
+        padding: 5rem 0 0 0;
+    }
+
+    h3 {
+        @include responsive(small-phone) { 
+            display: none;
+        }
     }
 }
 .features-title {
     color: rgba($color-black, .6);
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 10rem;
     max-width: 70rem;
     margin: 0 auto;
 
     @include responsive(medium-phone) {
-        padding: 4rem 3rem 0 3rem;
+        padding: 6.5rem 3rem 0 3rem;
     }
 
     h4 {
