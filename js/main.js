@@ -7,12 +7,16 @@
           format: "dropdown",
           sticky: false
         }, options);
+
+        var test;
+        var mainmenu;
   
         return this.each(function() {
           cssmenu.prepend('<div id="menu-button" class="nav__btn">' + '<a><img src="img/logo.png" alt="logo" width="90"></a>' + '</div>');
           $(this).find("#menu-button").on('click', function(){
-            $(this).toggleClass('menu-opened');
-            var mainmenu = $(this).next('ul');
+            test = $(this);
+            test.toggleClass('menu-opened');
+            mainmenu = $(this).next('ul');
             if (mainmenu.hasClass('open')) { 
               mainmenu.hide().removeClass('open');
             }
@@ -23,6 +27,11 @@
               }
             }
           });
+
+          $("#mobile-menu").on("click", function(e){
+            test.toggleClass('menu-opened');
+            mainmenu.hide().removeClass('open');
+          })
   
           cssmenu.find('li ul').parent().addClass('has-sub');
   
@@ -67,6 +76,5 @@
      title: "Menu",
      format: "multitoggle"
   });
-  
   });
   })(jQuery);
