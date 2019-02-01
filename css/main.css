@@ -163,7 +163,7 @@ body {
   line-height: 35px;
   padding: 0 1.5rem;
   margin-top: 2.5rem;
-  color: red;
+  color: #424242;
   font-size: 15px;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
@@ -787,7 +787,8 @@ header {
   @media only screen and (max-width: 32.5em) {
     .gallery {
       grid-gap: .5rem;
-      padding: .5rem; } }
+      padding: .5rem;
+      margin-bottom: 6.5rem; } }
   .gallery__about-us {
     color: #fff;
     background: #ff9251;
@@ -811,7 +812,7 @@ header {
       display: block;
       font-size: 2rem;
       font-weight: bold;
-      margin-bottom: 1rem; }
+      margin-top: 1rem; }
       @media only screen and (max-width: 26.75em) {
         .gallery__about-us i {
           font-size: 1.5rem; } }
@@ -828,21 +829,27 @@ header {
     grid-column: 3 / span 3; }
     @media only screen and (max-width: 56.25em) {
       .gallery__item--2 {
+        grid-row: 1 / span 4;
         grid-column: 4 / span 2; } }
   .gallery__item--3 {
     grid-row: 1 / span 4;
     grid-column: 6 / -1; }
+    @media only screen and (max-width: 56.25em) {
+      .gallery__item--3 {
+        grid-row: 1 / span 6; } }
   .gallery__item--1 {
     grid-row: 1 / span 7;
     grid-column: 1 / span 2; }
     @media only screen and (max-width: 56.25em) {
       .gallery__item--1 {
+        grid-row: 1 / span 8;
         grid-column: 1 / span 3; } }
   .gallery__item--6 {
     grid-row: 4 / span 4;
     grid-column: 3 / span 2; }
     @media only screen and (max-width: 56.25em) {
       .gallery__item--6 {
+        grid-row: 5 / span 4;
         grid-column: 4 / span 2; } }
   .gallery__item--7 {
     grid-row: 4 / 5;
@@ -855,6 +862,7 @@ header {
     grid-column: 5 / span 3; }
     @media only screen and (max-width: 56.25em) {
       .gallery__item--13 {
+        grid-row: 7 / span 2;
         grid-column: 6 / span 3; } }
   .gallery__item--14 {
     grid-row: 5 / span 3;
@@ -969,7 +977,7 @@ header {
   background: #ff9251;
   color: #fff;
   min-height: 15rem;
-  padding: 3rem 0;
+  padding: 3rem;
   width: 100%; }
   .donate-section p {
     font-size: 2rem;
@@ -977,6 +985,9 @@ header {
     max-width: 60rem;
     margin: 0 auto;
     text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .donate-section p {
+        font-size: 1.6rem; } }
 
 .features-title {
   color: rgba(0, 0, 0, 0.6);

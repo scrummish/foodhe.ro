@@ -121,7 +121,7 @@
     background: $color-orange;
     color: $color-white;
     min-height: 15rem;
-    padding: 3rem 0;
+    padding: 3rem;
     width: 100%;
 
     p {
@@ -130,6 +130,10 @@
         max-width: 60rem;
         margin: 0 auto;
         text-align: center;
+
+        @include responsive(tablet-portrait) { 
+            font-size: 1.6rem;
+        }
     }
 }
 
