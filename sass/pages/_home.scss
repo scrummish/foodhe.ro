@@ -55,6 +55,12 @@
         }
     }
 }
+.curriculum {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+}
 .about-us {
     background: $color-offwhite;
     text-align: center;
@@ -70,6 +76,10 @@
         }
     }
 }
+#about-us {
+    margin-bottom: 4rem;
+}
+
 .features-title {
     color: rgba($color-black, .6);
     text-align: center;

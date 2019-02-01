@@ -16,7 +16,6 @@ html {
     // @include responsive(tablet-portrait) { // width < 900
     //     font-size: 50%; //1 rem = 8px
     // }
-        
     @include responsive(large-desktop) {
         font-size: 75%; //1rem = 12
     }
@@ -25,4 +24,5 @@ html {
 body {
     background: $color-offwhite;
     margin: 0;
+    // overflow-y: scroll;
 }
