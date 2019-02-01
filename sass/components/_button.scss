@@ -1,0 +1,89 @@
+$btn_orange: $color-grey;
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+.rkmd-btn {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 1.5rem;
+    margin-top: 2.5rem;
+    color: #424242;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    outline: none;
+    border: none;
+    user-select: none;
+    border-radius: 2px;
+    transition: all .3s ease-out;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.225);
+  
+    &:hover { text-decoration: none; box-shadow: 0 4px 10px 0px rgba(0,0,0,0.225); }
+
+    &.btn-orange {
+        color: $color-white;
+        background-color: $btn_orange;
+        &:hover { background-color: lighten($btn_orange, 8%); }
+      }
+  }
+
+  .ripple-effect {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    z-index: 1;
+  
+    .ripple {
+      display: block;
+      position: absolute;
+      border-radius: 100%;
+      background: rgba(255,255,255,0.5);
+      transform: scale(0);
+      pointer-events: none;
+    }
+  
+    &.ripple-orange {
+      .ripple {
+        background: rgba(255,152,0,0.725) !important;
+      }
+    }
+  
+    .animated {
+      animation: ripple 0.6s linear;
+    }
+  
+    @include keyframes('ripple') {
+      100% {
+        opacity: 0;
+        transform: scale(2.5);
+      }
+    }
+  }

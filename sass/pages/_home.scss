@@ -55,12 +55,49 @@
         }
     }
 }
+
 .curriculum {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 2rem;
 }
+.sponsors {
+    align-items: center;
+    background: $color-white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include responsive(tablet-portrait) {
+        padding: 6rem 0 3rem 0;
+    }
+    @include responsive(tablet-small) {
+        padding: 1rem 0 0 0;
+    }
+
+    &__sponsor {
+        display: inline-block;
+        padding: 2rem;
+        width: calc(100% / 6);
+
+        @include responsive(tablet-portrait) {
+            padding: 3rem;
+            width: calc(100% / 3);
+        }
+        @include responsive(tablet-small) {
+            width: calc(100% / 2);
+        }
+        @include responsive(medium-phone) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
 .about-us {
     background: $color-offwhite;
     text-align: center;
@@ -78,6 +115,22 @@
 }
 #about-us {
     margin-bottom: 4rem;
+}
+
+.donate-section {
+    background: $color-orange;
+    color: $color-white;
+    min-height: 15rem;
+    padding: 3rem 0;
+    width: 100%;
+
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+        max-width: 60rem;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 .features-title {
@@ -117,41 +170,6 @@
             bottom: -2rem;
             left: 50%;
             transform: translateX(-50%);
-        }
-    }
-}
-.sponsors {
-    align-items: center;
-    background: $color-white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    @include responsive(tablet-portrait) {
-        padding: 6rem 0 3rem 0;
-    }
-    @include responsive(tablet-small) {
-        padding: 1rem 0 0 0;
-    }
-
-    &__sponsor {
-        display: inline-block;
-        padding: 2rem;
-        width: calc(100% / 6);
-
-        @include responsive(tablet-portrait) {
-            padding: 3rem;
-            width: calc(100% / 3);
-        }
-        @include responsive(tablet-small) {
-            width: calc(100% / 2);
-        }
-        @include responsive(medium-phone) {
-            width: 100%;
-        }
-
-        img {
-            width: 100%;
         }
     }
 }
