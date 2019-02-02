@@ -81,78 +81,8 @@
       & > a {
         color: $color-white !important;
       }
-
-//       &.has-sub{
-//         & > a {
-//           padding-right: 30px;
-//         }
-  
-//         & > a:after {
-//           position: absolute;
-//           top: 22px;
-//           right: 11px;
-//           width: 8px;
-//           height: 2px;
-//           display: block;
-//           background: $color-white;
-//           content: '';
-//         } 
       }
     }
-    
-//     &.has-sub{
-//       & > a {
-//         padding-right: 30px;
-//       }
-
-//       & > a:after {
-//         position: absolute;
-//         top: 22px;
-//         right: 11px;
-//         width: 8px;
-//         height: 2px;
-//         display: block;
-//         background: $color-black;
-//         content: '';
-//       }
-
-//       & > a:before {
-//         position: absolute;
-//         top: 19px;
-//         right: 14px;
-//         display: block;
-//         width: 2px;
-//         height: 8px;
-//         background: $color-black;
-//         content: '';
-//         -webkit-transition: all .25s ease;
-//         -moz-transition: all .25s ease;
-//         -ms-transition: all .25s ease;
-//         -o-transition: all .25s ease;
-//         transition: all .25s ease;
-//       }
-//     } 
-//   }
-
-//   &.align-center {
-//     & ul ul {
-//       text-align: left;
-//     }
-
-//     & > ul {
-//       font-size: 0;
-//       text-align: center;
-
-//       & > li {
-//         display: inline-block;
-//         float: none;
-//       }
-//     }
-//   }
-
-//   &.align-right > ul > li {
-//     float: right;
-//   }
 
   & #menu-button {
     display: none;
@@ -305,6 +235,7 @@
 @media all and (max-width: 790px){
   .nav {
     padding: inherit;
+    padding-top: 3.3rem;
 
     &__logo-container {
       display: none;

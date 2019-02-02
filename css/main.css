@@ -438,7 +438,8 @@ body {
 
 @media all and (max-width: 790px) {
   .nav {
-    padding: inherit; }
+    padding: inherit;
+    padding-top: 3.3rem; }
     .nav__logo-container {
       display: none; }
     .nav > ul > li {
