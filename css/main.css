@@ -788,7 +788,7 @@ header {
     .gallery {
       grid-gap: .5rem;
       padding: .5rem;
-      margin-bottom: 6.5rem; } }
+      margin-bottom: 3rem; } }
   .gallery__about-us {
     color: #fff;
     background: #ff9251;
@@ -973,22 +973,6 @@ header {
 #about-us {
   margin-bottom: 4rem; }
 
-.donate-section {
-  background: #ff9251;
-  color: #fff;
-  min-height: 15rem;
-  padding: 3rem;
-  width: 100%; }
-  .donate-section p {
-    font-size: 2rem;
-    font-weight: bold;
-    max-width: 60rem;
-    margin: 0 auto;
-    text-align: center; }
-    @media only screen and (max-width: 56.25em) {
-      .donate-section p {
-        font-size: 1.6rem; } }
-
 .features-title {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -1020,3 +1004,210 @@ header {
       bottom: -2rem;
       left: 50%;
       transform: translateX(-50%); }
+
+.section {
+  background: #ff9251;
+  color: #fff;
+  min-height: 15rem;
+  padding: 3rem;
+  width: 100%; }
+  .section--contact {
+    background: #ff9251;
+    color: inherit; }
+    .section--contact h1 {
+      color: #afb8b7;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0 0 2em; }
+    .section--contact .container {
+      position: relative;
+      max-width: 40rem;
+      margin: 0 auto;
+      background: #fff;
+      width: 100%;
+      padding: 3rem 5rem 0;
+      border-radius: 1px;
+      box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+    .section--contact .button-container {
+      text-align: center; }
+    .section--contact fieldset {
+      margin: 0 0 3rem;
+      padding: 0;
+      border: none; }
+    .section--contact .form-radio,
+    .section--contact .form-group {
+      position: relative;
+      margin-top: 2.25rem;
+      margin-bottom: 2.25rem; }
+    .section--contact .form-inline > .form-group,
+    .section--contact .form-inline > .btn {
+      display: inline-block;
+      margin-bottom: 0; }
+    .section--contact .form-help {
+      margin-top: 0.125rem;
+      margin-left: 0.125rem;
+      color: #b3b3b3;
+      font-size: 0.8rem; }
+    .section--contact .checkbox .form-help, .section--contact .form-radio .form-help, .section--contact .form-group .form-help {
+      position: absolute;
+      width: 100%; }
+    .section--contact .checkbox .form-help {
+      position: relative;
+      margin-bottom: 1rem; }
+    .section--contact .form-radio .form-help {
+      padding-top: 0.25rem;
+      margin-top: -1rem; }
+    .section--contact .form-group input {
+      height: 1.9rem; }
+    .section--contact .form-group textarea {
+      resize: none; }
+    .section--contact .form-group select {
+      width: 100%;
+      font-size: 1rem;
+      height: 1.6rem;
+      padding: 0.125rem 0.125rem 0.0625rem;
+      background: none;
+      border: none;
+      line-height: 1.6;
+      box-shadow: none; }
+    .section--contact .form-group .control-label {
+      position: absolute;
+      top: 0.25rem;
+      pointer-events: none;
+      padding-left: 0.125rem;
+      z-index: 1;
+      color: #b3b3b3;
+      font-size: 1rem;
+      font-weight: normal;
+      -webkit-transition: all 0.28s ease;
+      transition: all 0.28s ease; }
+    .section--contact .form-group .bar {
+      position: relative;
+      border-bottom: 1px solid #999;
+      display: block; }
+    .section--contact .form-group .bar::before {
+      content: '';
+      height: 0.125rem;
+      width: 0;
+      left: 50%;
+      bottom: -0.0625rem;
+      position: absolute;
+      background: #ff9251;
+      -webkit-transition: left 0.28s ease, width 0.28s ease;
+      transition: left 0.28s ease, width 0.28s ease;
+      z-index: 2; }
+    .section--contact .form-group input,
+    .section--contact .form-group textarea {
+      display: block;
+      background: none;
+      padding: 0.125rem 0.125rem 0.0625rem;
+      font-size: 1rem;
+      border-width: 0;
+      border-color: transparent;
+      line-height: 1.9;
+      width: 100%;
+      color: transparent;
+      -webkit-transition: all 0.28s ease;
+      transition: all 0.28s ease;
+      box-shadow: none; }
+    .section--contact .form-group input[type="file"] {
+      line-height: 1; }
+    .section--contact .form-group input[type="file"] ~ .bar {
+      display: none; }
+    .section--contact .form-group input:focus,
+    .section--contact .form-group input:valid,
+    .section--contact .form-group input.form-file,
+    .section--contact .form-group input.has-value,
+    .section--contact .form-group textarea:focus,
+    .section--contact .form-group textarea:valid,
+    .section--contact .form-group textarea.form-file,
+    .section--contact .form-group textarea.has-value {
+      color: #333; }
+    .section--contact .form-group input:focus ~ .control-label,
+    .section--contact .form-group input:valid ~ .control-label,
+    .section--contact .form-group input.form-file ~ .control-label,
+    .section--contact .form-group input.has-value ~ .control-label,
+    .section--contact .form-group textarea:focus ~ .control-label,
+    .section--contact .form-group textarea:valid ~ .control-label,
+    .section--contact .form-group textarea.form-file ~ .control-label,
+    .section--contact .form-group textarea.has-value ~ .control-label {
+      font-size: 0.8rem;
+      color: gray;
+      top: -1rem;
+      left: 0; }
+    .section--contact .form-group input:focus,
+    .section--contact .form-group textarea:focus {
+      outline: none; }
+    .section--contact .form-group input:focus ~ .control-label,
+    .section--contact .form-group textarea:focus ~ .control-label {
+      color: #ff9251; }
+    .section--contact .form-group input:focus ~ .bar::before,
+    .section--contact .form-group textarea:focus ~ .bar::before {
+      width: 100%;
+      left: 0; }
+    .section--contact .has-error .legend.legend, .section--contact .has-error.form-group .control-label.control-label {
+      color: #d9534f; }
+    .section--contact .has-error.form-group .form-help,
+    .section--contact .has-error.form-group .helper, .section--contact .has-error.checkbox .form-help,
+    .section--contact .has-error.checkbox .helper, .section--contact .has-error.radio .form-help,
+    .section--contact .has-error.radio .helper, .section--contact .has-error.form-radio .form-help,
+    .section--contact .has-error.form-radio .helper {
+      color: #d9534f; }
+    .section--contact .has-error .bar::before {
+      background: #d9534f;
+      left: 0;
+      width: 100%; }
+    .section--contact .button {
+      position: relative;
+      background: currentColor;
+      border: 1px solid currentColor;
+      font-size: 1.1rem;
+      color: #ff9251;
+      margin: 3rem 0;
+      padding: 0.75rem 3rem;
+      cursor: pointer;
+      -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+      transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+      overflow: hidden;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+    .section--contact .button span {
+      color: #fff;
+      position: relative;
+      z-index: 1; }
+    .section--contact .button::before {
+      content: '';
+      position: absolute;
+      background: #a73d00;
+      border: 50vh solid #a73d00;
+      width: 30vh;
+      height: 30vh;
+      border-radius: 50%;
+      display: block;
+      top: 50%;
+      left: 50%;
+      z-index: 0;
+      opacity: 1;
+      -webkit-transform: translate(-50%, -50%) scale(0);
+      transform: translate(-50%, -50%) scale(0); }
+    .section--contact .button:hover {
+      color: #ff5e00;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2); }
+    .section--contact .button:active::before, .section--contact .button:focus::before {
+      -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+      transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+      transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+      transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+      -webkit-transform: translate(-50%, -50%) scale(1);
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0; }
+    .section--contact .button:focus {
+      outline: none; }
+  .section--donate p {
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .section--donate p {
+        font-size: 1.6rem; } }
