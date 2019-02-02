@@ -252,7 +252,7 @@ body {
 .nav {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   z-index: 2;
-  padding: 0 10rem;
+  padding: 2.5rem 10rem 0 10rem;
   background: #fff;
   position: fixed;
   width: 100%; }
@@ -578,6 +578,23 @@ body {
     right: 16px; }
   #cssmenu .submenu-button.submenu-opened:before {
     display: none; } }
+
+.language {
+  background: #ff9251;
+  color: #000;
+  position: fixed;
+  padding: .8rem;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+  margin-bottom: 2rem;
+  font-size: 1.2rem; }
+  .language .link {
+    color: #fff;
+    padding: 0 1rem; }
+    .language .link:hover {
+      color: #000;
+      cursor: pointer; }
 
 header {
   display: flex;

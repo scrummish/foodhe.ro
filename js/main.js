@@ -117,6 +117,39 @@
 
   $('.ripple-effect').rkmd_rippleEffect();
 
+  const translator = {
+    spanish: {
+      courses: 'CURSOS',
+      aboutUs: 'QUIEN SOMOS',
+      donate: 'DONASION',
+      login: 'INICIAR',
+      heroTitle: 'Entrenamiento de cosina para professionales',
+      heroSubtitle: 'Cosinas Agiles',
+      curriculumPartners: 'curriculo',
+      coursesTitle: 'Cursos',
+      coursesBig: 'Tu futuro nos importa',
+      coursesP: 'Te ayudamos con tu negosio nasdklabgsf diags faosfoy asgbdo agfasu fabfabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
+    },
+    toggleSpanish: function() {
+      $("#courses-link").html(translator.spanish.courses);
+      $("#about-us-link").html(translator.spanish.aboutUs);
+      $("#donate-link").html(translator.spanish.donate);
+      $("#login-link").html(translator.spanish.login);
+      $("#hero-title").html(translator.spanish.heroTitle);
+      $("#hero-subtitle").html(translator.spanish.heroSubtitle);
+      $("#curriculum-partners").html(translator.spanish.curriculumPartners);
+      $("#courses-title").html(translator.spanish.coursesTitle);
+      $("#courses-big-title").html(translator.spanish.coursesBig);
+      $("#courses-p").html(translator.spanish.coursesP);
+    },
+    resetLanguage: function() {
+      location.reload();
+    },
+  }
+
+  $("#spanish").click(translator.toggleSpanish);
+  $("#english").click(translator.resetLanguage);
+
   });
 
   })(jQuery);
