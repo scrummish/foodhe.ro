@@ -119,16 +119,49 @@
 
   const translator = {
     spanish: {
+      // Nav br links
       courses: 'CURSOS',
       aboutUs: 'QUIEN SOMOS',
       donate: 'DONASION',
       login: 'INICIAR',
+      // Hero Section
       heroTitle: 'Entrenamiento de cosina para professionales',
       heroSubtitle: 'Cosinas Agiles',
-      curriculumPartners: 'curriculo',
+      // Curriculum partners
+      curriculumPartners: 'Curriculo',
+      // Courses Section
       coursesTitle: 'Cursos',
       coursesBig: 'Tu futuro nos importa',
       coursesP: 'Te ayudamos con tu negosio nasdklabgsf diags faosfoy asgbdo agfasu fabfabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
+      restaurantManagement: 'bdo agfasu fabfabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
+      rmContent: $('<p>Length of Program: 16 Semanas<br><br>The Restaurant Management Certificate Program  would prepare students with specialized training for hospitality and restaurant management. The program focuses on providing students with theoretical and practical management approaches to restaurant management, food sanitation and safety, controlling food costs, hospitality accounting and human resources/supervision<br><br>Cerifications:<br><br>National Restaurant Association<br><span>- Hospitality & Restaurant Management</span><span>- Human Resources</span><span>- Accounting</span><span>- Food Costs</span><span>- Serve Safe</span><br>Licenses: City of Chicago Food Service Sanitation Manager</p>'),
+      certifiedTech: 'Te fbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
+      ctContent: $('<p>Length of Program: 16 Semanas<br><br>The Manufacturing Skill Standards Council (MSSC) industry recognized credentialing system leading to a Certified Production Technician covers the four critical production functions (safety, quality practices & measurement, manufacturing process, maintenance awareness) common to all sectors of manufacturing.This program provides the foundational knowledge and skill sets applicable for entry to mid-level production technician jobs in the manufacturing industry with a specialization in food. It is designed for individuals wanting to enter the manufacturing and food manufacturing fields as production line workers as well as experienced employees wishing to seek MSSC certification.<br><br>Cerifications:<br><br><span>HACCP</span><span>Serve Safe - Food Safety</span>Manufacturing Skills Standards Council<br><span>- Certified Production Technician</span></p>'),
+      foodSafety: 'Te afabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
+      fsContent: $('<p >Length of Program: Dias 1<br><br>The course covers critical principles including: personal hygiene, cross contamination, time and temperature, cleaning and sanitizing, and more. A practice exam is included at the end of the course to help prepare for the proctored ServSafe Manager Certification exam.</p>'),
+      culinaryMed: 'agfasu fabfabifbvay dssaobfgv',
+      cmContent: $('ty4hjtry4hj'),
+      agileKitchen: 'Te afabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
+      akContent: $('rghtyrh'),
+      culinaryArts: 'agfasu fabfabifbvay dssaobfgv',
+      caContent: $('tyhyt5hy56'),
+      // Donation Section
+      donation: 'Spanish copy needed Spanish copy needed Spanish copy needed Spanish copy needed',
+      donationBtn: 'Donar',
+      // About Us Section
+      aboutUs: 'nos otros',
+      auBigText: 'conoser',
+      auCopy: 'food hero es spanish spanish spanish copy needed',
+      auOrangeBox: $('<p>Spanish copy needed<br><i>Workforce Education</i><i>Good Food</i><i>Healthy Menus</i><i>Sustainable Restaurants</i><i>Business & Community Empowerment</i><i>Social & Environmental Responsibility</i></p>'),
+      // Contact Us section
+      contactUsTitle: 'Contacto',
+      cuName: 'Nombre',
+      cuEmail: 'Email',
+      cuMessage: 'Mensaje',
+      cuSubmit: 'Mandar',
+      // Footer Section
+      footerCopy: 'spanish copy needed spanish copy needed sadikbgaskd',
+      fFollowUs: 'Sigir'
     },
     toggleSpanish: function() {
       $("#courses-link").html(translator.spanish.courses);
@@ -141,6 +174,31 @@
       $("#courses-title").html(translator.spanish.coursesTitle);
       $("#courses-big-title").html(translator.spanish.coursesBig);
       $("#courses-p").html(translator.spanish.coursesP);
+      $("#restaurantManagement").html(translator.spanish.restaurantManagement);
+      $("#rmContent").html(translator.spanish.rmContent);
+      $("#foodSafety").html(translator.spanish.foodSafety);
+      $("#fsContent").html(translator.spanish.fsContent);
+      $("#culinaryMed").html(translator.spanish.culinaryMed);
+      $("#cmContent").html(translator.spanish.cmContent);
+      $("#certifiedTech").html(translator.spanish.certifiedTech);
+      $("#ctContent").html(translator.spanish.ctContent);
+      $("#agileKitchen").html(translator.spanish.agileKitchen);
+      $("#akContent").html(translator.spanish.akContent);
+      $("#culinaryArts").html(translator.spanish.culinaryArts);
+      $("#caContent").html(translator.spanish.caContent);
+      $("#donation").html(translator.spanish.donation);
+      $("#donation-btn").html(translator.spanish.donationBtn);
+      $("#about-us-heading").html(translator.spanish.aboutUs);
+      $("#au-big-text").html(translator.spanish.auBigText);
+      $("#au-copy").html(translator.spanish.auCopy);
+      $("#au-orange-box").html(translator.spanish.auOrangeBox);
+      $("#contact-us-title").html(translator.spanish.contactUsTitle);
+      $("#cu-name").html(translator.spanish.cuName);
+      $("#cu-email").html(translator.spanish.cuEmail);
+      $("#cu-message").html(translator.spanish.cuMessage);
+      $("#cu-submit").html(translator.spanish.cuSubmit);
+      $("#footer-copy").html(translator.spanish.footerCopy);
+      $("#footer-follow-us").html(translator.spanish.fFollowUs);
     },
     resetLanguage: function() {
       location.reload();
