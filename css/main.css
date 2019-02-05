@@ -8,6 +8,7 @@
 1800px + :      Big desktop
 Order: Base & typography > general layout & grid > page layout > components
 */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 *,
 *::after,
 *::before {
@@ -26,7 +27,7 @@ body {
   margin: 0; }
 
 body {
-  font-family: Oswald, Arial, Helvetica, sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 .heading__3 {
   color: rgba(0, 0, 0, 0.6);
