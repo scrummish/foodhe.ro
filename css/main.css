@@ -101,7 +101,7 @@ body {
   padding-top: .7rem; }
 
 .deactivated {
-  opacity: .2; }
+  filter: opacity(80%) grayscale(100%); }
 
 .align-center {
   text-align: center; }
