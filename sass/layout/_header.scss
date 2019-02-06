@@ -9,6 +9,14 @@
     margin-bottom: 2rem;
     font-size: 1.2rem;
 
+    span {
+        color: $color-white;
+    }
+
+    @include responsive(small-phone) { 
+        background: $color-orange;
+    }
+
     .link {
         color: $color-white;
         padding: 0 1rem;
@@ -16,6 +24,10 @@
         &:hover {
             color: $color-black;
             cursor: pointer;
+
+            @include responsive(small-phone) { 
+                color: $color-orange;
+            }
         }
     }
 }

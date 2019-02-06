@@ -114,6 +114,9 @@ body {
   width: 100%;
   overflow: hidden;
   opacity: .5; }
+  @media only screen and (max-width: 26.75em) {
+    .bg-video {
+      display: none; } }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -591,12 +594,20 @@ body {
   z-index: 100;
   margin-bottom: 2rem;
   font-size: 1.2rem; }
+  .language span {
+    color: #fff; }
+  @media only screen and (max-width: 26.75em) {
+    .language {
+      background: #ff9251; } }
   .language .link {
     color: #fff;
     padding: 0 1rem; }
     .language .link:hover {
       color: #000;
       cursor: pointer; }
+      @media only screen and (max-width: 26.75em) {
+        .language .link:hover {
+          color: #ff9251; } }
 
 header {
   display: flex;
@@ -904,6 +915,11 @@ header {
   @media only screen and (max-width: 32.5em) {
     .hero {
       height: 100vh; } }
+  @media only screen and (max-width: 26.75em) {
+    .hero {
+      height: 35rem;
+      max-height: 100vh;
+      background: linear-gradient(to bottom right, #fb6500 50%, #ff9251 100%); } }
   .hero__title {
     color: #afb8b7;
     position: absolute;
@@ -916,6 +932,12 @@ header {
       .hero__title {
         padding: 3rem;
         text-align: left; } }
+    @media only screen and (max-width: 26.75em) {
+      .hero__title {
+        padding: 2.5rem;
+        text-align: left;
+        top: 50%;
+        transform: translateY(-50%); } }
     .hero__title h1 {
       display: block;
       color: #ff9251;
@@ -931,6 +953,13 @@ header {
         .hero__title h1 {
           font-size: 1.6rem;
           padding: 0; } }
+      @media only screen and (max-width: 26.75em) {
+        .hero__title h1 {
+          text-transform: none;
+          font-size: 1.5rem;
+          padding: .3rem 0 0 0;
+          font-weight: normal;
+          color: #fff; } }
     .hero__title h2 {
       display: inline-block;
       color: #fff;
@@ -941,6 +970,10 @@ header {
       @media only screen and (max-width: 32.5em) {
         .hero__title h2 {
           font-size: 1.2rem; } }
+      @media only screen and (max-width: 26.75em) {
+        .hero__title h2 {
+          font-size: 2.4rem;
+          padding: 1.8rem 0; } }
 
 .curriculum {
   position: absolute;
@@ -974,6 +1007,9 @@ header {
     @media only screen and (max-width: 32.5em) {
       .sponsors__sponsor {
         width: 100%; } }
+    @media only screen and (max-width: 26.75em) {
+      .sponsors__sponsor {
+        width: 50%; } }
     .sponsors__sponsor img {
       width: 100%; }
 
