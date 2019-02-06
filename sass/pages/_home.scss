@@ -12,7 +12,7 @@
     @include responsive(small-phone) { 
         height: 35rem;
         max-height: 100vh;
-        background: linear-gradient(to bottom right, #fb6500 0%, #ff9251 100%);
+        background: linear-gradient(to bottom right, #ff9251 0%, #fb6500 80%,);
     }
 
     &__title {
@@ -71,7 +71,7 @@
                 font-size: 1.2rem;
             }
             @include responsive(small-phone) { 
-                font-size: 3rem;
+                font-size: 3.5rem;
                 padding: 1.8rem 0;
             }
         }

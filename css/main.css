@@ -919,7 +919,7 @@ header {
     .hero {
       height: 35rem;
       max-height: 100vh;
-      background: linear-gradient(to bottom right, #fb6500 0%, #ff9251 100%); } }
+      background: linear-gradient(to bottom right, #ff9251 0%, #fb6500 80%); } }
   .hero__title {
     color: #afb8b7;
     position: absolute;
@@ -972,7 +972,7 @@ header {
           font-size: 1.2rem; } }
       @media only screen and (max-width: 26.75em) {
         .hero__title h2 {
-          font-size: 3rem;
+          font-size: 3.5rem;
           padding: 1.8rem 0; } }
 
 .curriculum {
