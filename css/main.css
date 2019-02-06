@@ -52,7 +52,7 @@ body {
       font-size: 2rem; } }
 
 .heading--feature p {
-  color: #afb8b7;
+  color: #87908f;
   font-size: 1.5rem; }
   @media only screen and (max-width: 26.75em) {
     .heading--feature p {
@@ -133,7 +133,7 @@ body {
       padding: 10rem; } }
   @media only screen and (max-width: 48em) {
     .features {
-      padding: 7rem 2rem; } }
+      padding: 7rem 3rem; } }
   @supports (display: grid) {
     .features {
       display: grid;

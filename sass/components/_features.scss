@@ -10,7 +10,7 @@
     }
 
     @include responsive(tablet-small) {
-        padding: 7rem 2rem;
+        padding: 7rem 3rem;
     }
 
     @supports(display: grid) {

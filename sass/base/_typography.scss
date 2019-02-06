@@ -34,7 +34,7 @@ body {
 
     &--feature {
         & p {
-            color: $color-grey;
+            color: #87908f;
             font-size: 1.5rem;
 
             @include responsive(small-phone) {
