@@ -607,7 +607,7 @@ body {
       cursor: pointer; }
       @media only screen and (max-width: 26.75em) {
         .language .link:hover {
-          color: #ff9251; } }
+          color: #afb8b7; } }
 
 header {
   display: flex;
