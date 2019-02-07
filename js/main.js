@@ -121,37 +121,37 @@
     spanish: {
       // Nav br links
       courses: 'CURSOS',
-      aboutUs: 'QUIEN SOMOS',
-      donate: 'DONASION',
+      aboutUsLink: 'NOSOTROS',
+      donate: 'DONACION',
       login: 'INICIAR',
       // Hero Section
-      heroTitle: 'Entrenamiento de cosina para professionales',
-      heroSubtitle: 'Cosinas Agiles',
+      heroTitle: 'Bootcamps culinarios para profesionales de servicio de comida y empresarios',
+      heroSubtitle: 'Cocinas ágiles',
       // Curriculum partners
       curriculumPartners: 'Curriculo',
       // Courses Section
-      coursesTitle: 'Cursos',
+      coursesTitle: 'Trayectoria de Carrera',
       coursesBig: 'Tu futuro nos importa',
-      coursesP: 'Te ayudamos con tu negosio nasdklabgsf diags faosfoy asgbdo agfasu fabfabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
-      restaurantManagement: 'bdo agfasu fabfabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
-      rmContent: $('<p>Length of Program: 16 Semanas<br><br>The Restaurant Management Certificate Program  would prepare students with specialized training for hospitality and restaurant management. The program focuses on providing students with theoretical and practical management approaches to restaurant management, food sanitation and safety, controlling food costs, hospitality accounting and human resources/supervision<br><br>Cerifications:<br><br>National Restaurant Association<br><span>- Hospitality & Restaurant Management</span><span>- Human Resources</span><span>- Accounting</span><span>- Food Costs</span><span>- Serve Safe</span><br>Licenses: City of Chicago Food Service Sanitation Manager</p>'),
-      certifiedTech: 'Te fbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
-      ctContent: $('<p>Length of Program: 16 Semanas<br><br>The Manufacturing Skill Standards Council (MSSC) industry recognized credentialing system leading to a Certified Production Technician covers the four critical production functions (safety, quality practices & measurement, manufacturing process, maintenance awareness) common to all sectors of manufacturing.This program provides the foundational knowledge and skill sets applicable for entry to mid-level production technician jobs in the manufacturing industry with a specialization in food. It is designed for individuals wanting to enter the manufacturing and food manufacturing fields as production line workers as well as experienced employees wishing to seek MSSC certification.<br><br>Cerifications:<br><br><span>HACCP</span><span>Serve Safe - Food Safety</span>Manufacturing Skills Standards Council<br><span>- Certified Production Technician</span></p>'),
-      foodSafety: 'Te afabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
-      fsContent: $('<p >Length of Program: Dias 1<br><br>The course covers critical principles including: personal hygiene, cross contamination, time and temperature, cleaning and sanitizing, and more. A practice exam is included at the end of the course to help prepare for the proctored ServSafe Manager Certification exam.</p>'),
-      culinaryMed: 'agfasu fabfabifbvay dssaobfgv',
-      cmContent: $('ty4hjtry4hj'),
-      agileKitchen: 'Te afabifbvay dshkcfgv bhsd ovb bcfgdsaobfgv',
-      akContent: $('rghtyrh'),
-      culinaryArts: 'agfasu fabfabifbvay dssaobfgv',
-      caContent: $('tyhyt5hy56'),
+      coursesP: 'Nos preocupamos por tus objetivos personales y empresariales. Elige la trayectoria profesional correcta. Tome nuestra evaluación para decidir o hablar con nuestros entrenadores de carrera.',
+      restaurantManagement: 'Administración del restaurante',
+      rmContent: $('<p>Duración del programa: 16 semanas<br><br>El Programa de Certificado de Administracion de Restaurantes prepararía a los estudiantes con capacitación especializada para la administración de restaurantes y hospitalidad. El programa se centra en proporcionar a los estudiantes enfoques de administracion prácticos y teóricos para la administracion de restaurantes, el saneamiento y la seguridad de los alimentos, el control de los costos de los alimentos, la contabilidad de la hospitalidad y los recursos humanos / supervisión.<br><br>Certificaciones:<br><br>Asociación Nacional de Restaurantes<br><span>- Hostelería y gestión de restaurantes.</span><span>- Recursos Humanos / Leyes laborales</span><span>- Contabilidad</span><span>- Costos de Comida</span><span>- Serve Safe - Gerente de Servicio de Alimentos</span><br>Licencias: Gerente de Sanidad del Servicio de Alimentos de la Ciudad de Chicago</p>'),
+      certifiedTech: 'Técnico certificado en producción de alimentos',
+      ctContent: $('<p>Duración del programa: 16 semanas<br><br>El sistema de credencialización reconocido por la industria de Manufacturing Skill Standards Council (MSSC) que conduce a un técnico de producción certificado cubre las cuatro funciones de producción críticas (seguridad, prácticas de calidad y medición, proceso de fabricación, conciencia de mantenimiento) comunes a todos los sectores de fabricación. Este programa proporciona los conocimientos básicos y los conjuntos de habilidades aplicables para la entrada a puestos de técnico de producción de nivel medio en la industria manufacturera con una especialización en alimentos. Está diseñado para personas que desean ingresar en los campos de fabricación y fabricación de alimentos como trabajadores de la línea de producción, así como empleados con experiencia que desean obtener la certificación MSSC.<br><br>Certificaciones:<br><br><span>HACCP</span><span>Serv Safe - Seguridad alimentaria</span>Consejo de Normas de Habilidades de Fabricación<br><span>- Técnico de Producción Certificado</span></p>'),
+      foodSafety: 'Seguridad Alimenticia',
+      fsContent: $('<p>Duración: 1 día<br><br>El curso cubre principios críticos que incluyen: higiene personal, contaminación cruzada, tiempo y temperatura, limpieza y desinfección, y más. UNA El examen de práctica se incluye al final del curso para ayudar a prepararse para el examen de certificación de administrador de ServSafe supervisado.</p>'),
+      culinaryMed: 'Medicina Culinaria',
+      cmContent: $('<p>Duración: 2 días<br><br>CHEF Coaching es un programa innovador diseñado para capacitar a los médicos clínicos a fin de proporcionar instrucción culinaria y educación fáciles de seguir directamente a los pacientes para mejorar la calidad y, a menudo, reducir el costo de la preparación de alimentos en el hogar. Al finalizar el programa, debe esperar mejorar sus habilidades culinarias y traducir este nuevo conocimiento a su práctica y mejorar la nutrición de sus clientes. <br><br>Certificaciones:<br><br>Los graduados en capacitación obtienen un “Certificado de Finalización en Entrenamiento Culinario” del Instituto de Medicina del Estilo de Vida, el Hospital de Rehabilitación Spaulding, la Escuela de Medicina de Harvard</p>'),
+      agileKitchen: 'Cocina Agil',
+      akContent: $('<p>Duración: 6 semanas<br><br>El programa de capacitación está diseñado para que el participante no entienda los diversos aspectos relacionales del modelo de negocios de alimentos, como las asociaciones, las relaciones con los clientes, las finanzas y el presupuesto con fines de lucro, y los conceptos básicos culinarios para desarrollar su negocio a través de los desafíos del mundo real y los pasos para presentar negocio a inversionistas y nuevas asociaciones para eventualmente salir por su cuenta como dueños de negocios independientes y / o de ladrillo y cemento.<br></p>'),
+      culinaryArts: 'Artes Culinarias',
+      caContent: $('<p>Duración del programa: 16 semanas<br><br>Un programa que prepara a las personas para brindar servicios de cocina profesional y servicios de cocina relacionados en restaurantes y otros establecimientos comerciales de alimentos. Incluye instrucción sobre planificación de recetas y menús, preparación y cocción de alimentos, supervisión y capacitación de ayudantes de cocina, manejo de suministros de alimentos y recursos de cocina, estética de la presentación de los alimentos y familiaridad o dominio de una amplia variedad de cocinas y técnicas culinarias. <br><br>Certificaciones:<br><br>Asociación Nacional de Restaurantes - Cocina<br>American Culinary Federation - Certified Fundamentals Cook - CFC<br>ServSafe - Gerente de Certificación de Servicios de Alimentos<br>ServSafe = Certificación de alérgenos alimentarios<br><br>Licencias: Gerente de Sanidad del Servicio de Alimentos de la Ciudad de Chicago</p>'),
       // Donation Section
-      donation: 'Spanish copy needed Spanish copy needed Spanish copy needed Spanish copy needed',
+      donation: 'Su contribución financiera garantiza que los futuros estudiantes puedan continuar beneficiándose de este programa sin cargo.',
       donationBtn: 'Donar',
       // About Us Section
-      aboutUs: 'nos otros',
-      auBigText: 'conoser',
-      auCopy: 'food hero es spanish spanish spanish copy needed',
+      aboutUs: 'Sobre nosotros',
+      auBigText: 'Que es Foodhero?',
+      auCopy: 'Foodhero es una empresa emergente de tecnología social que ofrece cursos de capacitación personalizados e innovadores en capacitación en agilidad empresarial para empresarios de alimentos y cursos culinarios certificados para profesionales.',
       auOrangeBox: $('<p>Spanish copy needed<br><i>Workforce Education</i><i>Good Food</i><i>Healthy Menus</i><i>Sustainable Restaurants</i><i>Business & Community Empowerment</i><i>Social & Environmental Responsibility</i></p>'),
       // Contact Us section
       contactUsTitle: 'Contacto',
@@ -160,12 +160,12 @@
       cuMessage: 'Mensaje',
       cuSubmit: 'Mandar',
       // Footer Section
-      footerCopy: 'spanish copy needed spanish copy needed sadikbgaskd',
-      fFollowUs: 'Sigir'
+      footerCopy: 'Foodhero es una empresa emergente de tecnología social que ofrece cursos de capacitación personalizados e innovadores en capacitación en agilidad empresarial para empresarios de alimentos y cursos culinarios certificados para profesionales.',
+      fFollowUs: 'Seguir'
     },
     toggleSpanish: function() {
       $("#courses-link").html(translator.spanish.courses);
-      $("#about-us-link").html(translator.spanish.aboutUs);
+      $("#about-us-link").html(translator.spanish.aboutUsLink);
       $("#donate-link").html(translator.spanish.donate);
       $("#login-link").html(translator.spanish.login);
       $("#hero-title").html(translator.spanish.heroTitle);
