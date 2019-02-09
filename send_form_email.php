@@ -1,8 +1,9 @@
 <?php
+header('Location: http://www.foodhe.ro');
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "scrummish@gmail.com";
+    $email_to = "javier@foodhe.ro";
     $email_subject = "Foodhero Contact";
  
     function died($error) {

@@ -12,7 +12,6 @@
     @include responsive(small-phone) { 
         height: 35rem;
         max-height: 100vh;
-        background: linear-gradient(to bottom right, #ff9251 0%, #fb6500 80%,);
     }
 
     &__title {
@@ -43,6 +42,8 @@
             padding: .5rem 0;
             text-transform: uppercase;
             z-index: 10;
+            max-width: 100rem;
+            margin: 0 auto;
 
             @include responsive(tablet-small) { 
                 font-size: 2rem;
@@ -56,7 +57,7 @@
                 font-size: 2rem;
                 padding: .3rem 0 0 0;
                 font-weight: normal;
-                color: $color-white
+                color: $color-white;
             }
         }
         h2 {
@@ -71,6 +72,7 @@
                 font-size: 1.2rem;
             }
             @include responsive(small-phone) { 
+                color: $color-orange;
                 font-size: 3.5rem;
                 padding: 1.8rem 0;
             }

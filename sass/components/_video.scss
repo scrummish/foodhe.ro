@@ -8,9 +8,9 @@
     overflow: hidden;
     opacity: .5;
 
-    @include responsive(small-phone) { 
-        display: none;
-    }
+    // @include responsive(small-phone) { 
+    //     display: none;
+    // }
     
     &__content {
         height: 100%;
