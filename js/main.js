@@ -54,17 +54,15 @@
           if (settings.sticky === true) cssmenu.css('position', 'fixed');
   
           resizeFix = function() {
-            if ($( window ).width() > 775) {
+            if ($( window ).width() > 850) {
               cssmenu.find('ul').show();
             }
-  
-            if ($(window).width() <= 775) {
+            if ($(window).width() <= 865) {
               cssmenu.find('ul').hide().removeClass('open');
             }
           };
           resizeFix();
           return $(window).on('resize', resizeFix);
-  
         });
     };
   })(jQuery);
@@ -152,7 +150,7 @@
       aboutUs: 'Sobre nosotros',
       auBigText: 'Que es Foodhero?',
       auCopy: 'Foodhero es una empresa emergente de tecnología social que ofrece cursos de capacitación personalizados e innovadores en capacitación en agilidad empresarial para empresarios de alimentos y cursos culinarios certificados para profesionales.',
-      auOrangeBox: $('<p>Spanish copy needed<br><i>Workforce Education</i><i>Good Food</i><i>Healthy Menus</i><i>Sustainable Restaurants</i><i>Business & Community Empowerment</i><i>Social & Environmental Responsibility</i></p>'),
+      auOrangeBox: $('<div>Creemos en<br><i>Educación de la fuerza laboral</i><i>Comida Rica</i><i>Menus Nutritivos</i><i>Restaurantes Sostenibles</i><i>Empoderamiento de Negicios & Comunidades</i><i>Responsabilidad Social y Ambiental</i></div>'),
       // Contact Us section
       contactUsTitle: 'Contacto',
       cuName: 'Nombre',

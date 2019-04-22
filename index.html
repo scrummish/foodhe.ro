@@ -20,7 +20,7 @@
   <div class="language">
       <span class="link" id="spanish">Español</span>
       <span>|</span>
-      <span class="link" id="english">Etetsts</span>
+      <span class="link" id="english">English</span>
    </div>
   <header>
     <nav class="nav" id="cssmenu">
@@ -28,10 +28,43 @@
          <div class="nav__logo-container">
             <div><a href="#"><img src="img/logo.png" alt="img/logo.png" width="125"></a></div>
          </div>
+         <li><a href="#contact-us" id="contact-us-link">Contact Us</a></li>
          <li><a href="https://foodhero.talentlms.com/index" target="_blank" rel="noreferrer" id="login-link">Login</a></li>
          <li><a href="https://form.jotform.com/90201201184136" target="_blank" rel="noreferrer" id="donate-link">Donate</a></li>
          <li><a href="#about-us" id="about-us-link">About Us</a></li>
-         <li><a href="#courses" id="courses-link">Courses</a></li>
+         <li>
+            <a href="#courses" id="courses-link">Courses</a>
+            <ul>
+               <li><a href='#'>In Person</a>
+                  <ul>
+                     <li><a href='#'>Course 1</a></li>
+                     <li><a href='#'>Course 2</a></li>
+                  </ul>
+               </li>
+               <li><a href='#'>Online</a>
+                  <ul>
+                     <li><a href='#'>Online Course 1</a></li>
+                     <li><a href='#'>Online Course 2</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li><a href='#'>Services</a>
+            <ul>
+               <li><a href='#'>Service 1</a>
+                  <ul>
+                     <li><a href='#'>Sub Service 1</a></li>
+                     <li><a href='#'>Sub Service 2</a></li>
+                  </ul>
+               </li>
+               <li><a href='#'>Service 2</a>
+                  <ul>
+                     <li><a href='#'>Sub Service 1</a></li>
+                     <li><a href='#'>Sub Service 2</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
          <!-- <li><a href='#'>On Campus</a>
             <ul>
                <li><a href='#'>Restaurant Management</a></li>
@@ -58,6 +91,7 @@
                </li>
             </ul>
          </li> -->
+         
       </ul>
    </nav>
    <!-- In the hero section you can update the text that shows in front of the video -->
@@ -255,28 +289,27 @@
          <figure class="gallery__item gallery__item--14"><img src="img/prep.jpg" alt="Gallery image 14" class="gallery__img"></figure>
          <!-- <figure class="gallery__item gallery__item--10"><img src="img/prep.jpg" alt="Gallery image 14" class="gallery__img"></figure> -->
    </section>
-   <section class="section section--contact">
-
-<div class="container">
-      <form name="contactform" method="post" action="send_form_email.php">
-        <h1 id="contact-us-title">Contact Us</h1>
-        <div class="form-group">
-            <input type="text" required="required" name="full_name">
-            <label for="input" class="control-label" id="cu-name">Name</label><i class="bar"></i>
-          </div>
-        <div class="form-group">
-          <input type="text" required="required" name="email">
-          <label for="input" class="control-label" id="cu-email">Email</label><i class="bar"></i>
-        </div>
-        <div class="form-group">
-          <textarea required="required" name="comments"></textarea>
-          <label for="textarea" class="control-label" id="cu-message">Message</label><i class="bar"></i>
-        </div>
-        <div class="button-container">
-            <button type="submit" class="button"><span id="cu-submit">Submit</span></button>
-          </div>
-      </form>
-    </div>
+   <section id="contact-us" class="section section--contact">
+      <div class="container">
+         <form name="contactform" method="post" action="send_form_email.php">
+         <h1 id="contact-us-title">Contact Us</h1>
+         <div class="form-group">
+               <input type="text" required="required" name="full_name">
+               <label for="input" class="control-label" id="cu-name">Name</label><i class="bar"></i>
+            </div>
+         <div class="form-group">
+            <input type="text" required="required" name="email">
+            <label for="input" class="control-label" id="cu-email">Email</label><i class="bar"></i>
+         </div>
+         <div class="form-group">
+            <textarea required="required" name="comments"></textarea>
+            <label for="textarea" class="control-label" id="cu-message">Message</label><i class="bar"></i>
+         </div>
+         <div class="button-container">
+               <button type="submit" class="button"><span id="cu-submit">Submit</span></button>
+            </div>
+         </form>
+      </div>
    </section>
   <!-- You can find the location, contact information and social media links, 
    and short descrptio of foodhero in the footer below -->
@@ -326,6 +359,6 @@
    </div>
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-  <script src="js/app.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
