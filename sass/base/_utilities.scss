@@ -17,3 +17,8 @@
 .align-center {
     text-align: center;
 }
+
+a.disable {
+    pointer-events: none;
+    cursor: default;
+  }

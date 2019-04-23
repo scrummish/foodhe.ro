@@ -85,9 +85,9 @@ body {
   white-space: nowrap; }
 
 .author {
-  color: #5900ff;
+  color: #4e4e4e;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   white-space: nowrap;
   text-decoration: none; }
 
@@ -105,6 +105,10 @@ body {
 
 .align-center {
   text-align: center; }
+
+a.disable {
+  pointer-events: none;
+  cursor: default; }
 
 .bg-video {
   position: absolute;

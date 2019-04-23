@@ -28,13 +28,17 @@
             }
           });
 
+          // Prevents the mobile menu from being closed if a submenu button is clicked
           $("#mobile-menu").on("click", function(e){
-            test.toggleClass('menu-opened');
-            mainmenu.hide().removeClass('open');
+            if (e.target.nodeName !== "SPAN") {
+              test.toggleClass('menu-opened');
+              mainmenu.hide().removeClass('open');
+            }
           })
   
           cssmenu.find('li ul').parent().addClass('has-sub');
-  
+          
+          // Sub Menu for links that have more options
           multiTg = function() {
             cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
             cssmenu.find('.submenu-button').on('click', function() {
