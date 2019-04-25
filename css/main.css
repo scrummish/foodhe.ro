@@ -238,6 +238,33 @@ a.disable {
     opacity: 0;
     transform: scale(2.5); } }
 
+.flyer {
+  border-bottom: 1px solid #afb8b7; }
+  .flyer img {
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.info {
+  border-bottom: 1px solid #afb8b7; }
+  .info__date {
+    font-size: 1.6rem;
+    color: #000; }
+  .info__time {
+    font-size: 1.4rem;
+    color: #afb8b7; }
+  .info__title {
+    color: #ff9251;
+    font-size: 3rem;
+    margin: 1rem 0 1rem 1rem; }
+  .info__text {
+    color: #464646;
+    font-size: 1.4rem;
+    margin-right: 3rem;
+    overflow: auto;
+    min-height: 10rem;
+    max-height: 15rem; }
+
 .nav,
 .nav ul,
 .nav ul li,
@@ -977,6 +1004,27 @@ header {
           color: #ff9251;
           font-size: 3.5rem;
           padding: 1.8rem 0; } }
+  .hero__content {
+    z-index: 1000;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -68%);
+    width: 90rem;
+    display: flex;
+    justify-content: space-between; }
+    .hero__content--subtitles {
+      top: 75%;
+      transform: translate(-50%, -75%); }
+    .hero__content svg {
+      border-radius: 50%;
+      background: #00000063;
+      fill: #ff9251;
+      width: 7.5rem;
+      height: 7.5rem;
+      padding: 1.6rem;
+      transform: translateY(-1rem);
+      box-shadow: 0 0 3pt 2pt #ff9251; }
 
 .curriculum {
   position: absolute;
@@ -1063,7 +1111,6 @@ header {
       transform: translateX(-50%); }
 
 .section {
-  background: #ff9251;
   color: #fff;
   min-height: 15rem;
   padding: 3rem;
@@ -1259,12 +1306,30 @@ header {
       opacity: 0; }
     .section--contact .button:focus {
       outline: none; }
-  .section--donate p {
-    font-size: 2rem;
-    font-weight: bold;
-    max-width: 60rem;
-    margin: 0 auto;
-    text-align: center; }
-    @media only screen and (max-width: 56.25em) {
-      .section--donate p {
-        font-size: 1.6rem; } }
+  .section--donate {
+    background: #ff9251; }
+    .section--donate p {
+      font-size: 2rem;
+      font-weight: bold;
+      max-width: 60rem;
+      margin: 0 auto;
+      text-align: center; }
+      @media only screen and (max-width: 56.25em) {
+        .section--donate p {
+          font-size: 1.6rem; } }
+  .section--events {
+    background: #f7f7f7;
+    padding: 3rem 2rem 0 3rem; }
+  .section__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+  .section__flex-item {
+    min-height: 20rem;
+    width: 50%;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem; }
+  .section__title {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    margin-bottom: 3rem; }

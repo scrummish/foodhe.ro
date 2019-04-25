@@ -1,0 +1,43 @@
+.flyer {
+    border-bottom: 1px solid $color-grey;
+
+    img {
+        max-width: 80%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        // display: block;
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+}
+
+// Block
+.info {
+    border-bottom: 1px solid $color-grey;
+
+    // Elements
+    &__date {
+        font-size: 1.6rem;
+        color: $color-black;
+    }
+
+    &__time {
+        font-size: 1.4rem;
+        color: $color-grey;
+    }
+
+    &__title {
+        color: $color-orange;
+        font-size: 3rem;
+        margin: 1rem 0 1rem 1rem;
+    }
+
+    &__text {
+        color: rgb(70, 70, 70);
+        font-size: 1.4rem;
+        margin-right: 3rem;
+        overflow: auto;
+        min-height: 10rem;
+        max-height: 15rem;
+    }
+}

@@ -119,6 +119,91 @@
 
   $('.ripple-effect').rkmd_rippleEffect();
 
+  /**************** EVENTS SECTION ***********************/
+
+  // How to create and delete a new event
+    /* Copy and paste this example exactly. 
+       Then change the text inside ' ' to match the information for your new event.
+       Make sure the flyer name is exactly the same as it is in the file. 
+
+        Example: 
+
+        {
+          date: 'december 25, 2019',
+          time: '9am-10am',
+          title: 'Christmas Day',
+          text: 'Join us for blah blah blah',
+          flyer: 'nameOfFlyer.jpg'
+        },
+
+       Note: For multiple events place them one after another and dont forget the comma after each one
+       to delete just remove the entire event in between { } including the comma.
+        
+        Example:
+
+          {
+            date: 'december 25, 2019',
+            time: '9am-10am',
+            title: 'Event 1',
+            text: 'Join us for blah blah blah',
+            flyer: 'event1.png'
+          },
+          {
+            date: 'december 25, 2019',
+            time: '9am-10am',
+            title: 'Event 2',
+            text: 'Join us for blah blah blah',
+            flyer: 'event2.jpg'
+          },
+
+        Last Step: Add the flyer to the img folder on godaddy
+    */
+  let listOfEvents = [
+    // place your new event in here
+    {
+      date: 'october 31st, 2019',
+      dateSpanish: 'spanish date',
+      time: '7pm-11pm',
+      timeSpanish: 'spanish time',
+      title: 'Halloween Party',
+      titleSpanish: 'spanish title',
+      text: 'Join us for blah blah blah',
+      textSpanish: 'spanish text',
+      flyer: 'nameOfFlyer.jpg'
+    },
+    {
+      date: 'october 31st, 2019',
+      dateSpanish: 'spanish date',
+      time: '7pm-11pm',
+      timeSpanish: 'spanish time',
+      title: 'Halloween Party',
+      titleSpanish: 'spanish title',
+      text: 'Join us for blah blah blah',
+      textSpanish: 'spanish text',
+      flyer: 'testing.jpg'
+    },  
+  ];
+
+  // Don't touch anything below this line //
+
+  listOfEvents.forEach(function(ev) {
+    let newEvent = $(`
+      <div class="section__flex-item info">
+        <h3 class="info__date">${ev.date.toUpperCase()}</h3>
+        <h3 class="info__time">${ev.time.toUpperCase()}</h3>
+        <h1 class="info__title">${ev.title}</h1>
+        <p class="info__text"> ${ev.text} </p>
+      </div>
+      <div class="section__flex-item flyer">
+        <img src="img/${ev.flyer}"/>
+      </div>
+    `);
+
+    $('#events').append(newEvent);
+  });
+
+  /**************** END OF EVENTS SECTION ***************/
+
   const translator = {
     spanish: {
       // Nav br links
