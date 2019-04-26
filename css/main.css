@@ -240,6 +240,9 @@ a.disable {
 
 .flyer {
   border-bottom: 1px solid #afb8b7; }
+  @media only screen and (max-width: 37.5em) {
+    .flyer {
+      border-bottom: none; } }
   .flyer img {
     max-width: 80%;
     height: auto;
@@ -256,7 +259,7 @@ a.disable {
   .info__title {
     color: #ff9251;
     font-size: 3rem;
-    margin: 1rem 0 1rem 1rem; }
+    margin: 1rem 0; }
   .info__text {
     color: #464646;
     font-size: 1.4rem;
@@ -955,10 +958,6 @@ header {
     width: 100%;
     margin: 0 auto;
     text-align: center; }
-    @media only screen and (max-width: 32.5em) {
-      .hero__title {
-        padding: 3rem;
-        text-align: left; } }
     @media only screen and (max-width: 26.75em) {
       .hero__title {
         padding: 2.5rem;
@@ -1007,24 +1006,68 @@ header {
   .hero__content {
     z-index: 1000;
     position: absolute;
-    top: 68%;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, -68%);
-    width: 90rem;
+    transform: translate(-50%, -70%);
     display: flex;
     justify-content: space-between; }
-    .hero__content--subtitles {
-      top: 75%;
-      transform: translate(-50%, -75%); }
+    @media only screen and (max-width: 26.75em) {
+      .hero__content {
+        display: none; } }
+    .hero__content div {
+      text-align: center;
+      min-width: 15rem; }
+      @media only screen and (max-width: 75em) {
+        .hero__content div {
+          min-width: 13rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .hero__content div {
+          min-width: 10rem; } }
+      @media only screen and (max-width: 48em) {
+        .hero__content div {
+          min-width: 8rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .hero__content div {
+          min-width: 6rem; } }
+    .hero__content h2 {
+      color: #fff; }
+      @media only screen and (max-width: 75em) {
+        .hero__content h2 {
+          font-size: 1.3rem; } }
+      @media only screen and (max-width: 48em) {
+        .hero__content h2 {
+          font-size: 1.1rem; } }
     .hero__content svg {
       border-radius: 50%;
       background: #00000063;
-      fill: #ff9251;
       width: 7.5rem;
       height: 7.5rem;
       padding: 1.6rem;
       transform: translateY(-1rem);
       box-shadow: 0 0 3pt 2pt #ff9251; }
+      .hero__content svg#medicine {
+        fill: red; }
+      .hero__content svg#safety {
+        fill: blue; }
+      .hero__content svg#culinary {
+        fill: white; }
+      .hero__content svg#manufacturing {
+        fill: #ff9251; }
+      .hero__content svg#startups {
+        fill: magenta; }
+      .hero__content svg#hospitality {
+        fill: yellow; }
+      .hero__content svg#iot {
+        fill: green; }
+      @media only screen and (max-width: 75em) {
+        .hero__content svg {
+          width: 5.5rem;
+          height: 5.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .hero__content svg {
+          width: 4rem;
+          height: 4rem;
+          padding: .6rem; } }
 
 .curriculum {
   position: absolute;
@@ -1318,7 +1361,7 @@ header {
         .section--donate p {
           font-size: 1.6rem; } }
   .section--events {
-    background: #f7f7f7;
+    background: #fff;
     padding: 3rem 2rem 0 3rem; }
   .section__content {
     display: flex;
@@ -1329,6 +1372,9 @@ header {
     width: 50%;
     margin-bottom: 3rem;
     padding-bottom: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section__flex-item {
+        width: 100%; } }
   .section__title {
     color: rgba(0, 0, 0, 0.6);
     text-align: center;

@@ -23,10 +23,6 @@
         margin: 0 auto;
         text-align: center;
 
-        @include responsive(medium-phone) { 
-            padding: 3rem;
-            text-align: left;
-        }
         @include responsive(small-phone) { 
             padding: 2.5rem;
             text-align: left;
@@ -82,27 +78,85 @@
     &__content {
       z-index: 1000;
       position: absolute;
-      top: 68%;
+      top: 70%;
       left: 50%;
-      transform: translate(-50%,-68%);
-      width: 90rem;
+      transform: translate(-50%,-70%);
       display: flex;
       justify-content: space-between;
 
-      &--subtitles {
-        top: 75%;
-        transform: translate(-50%,-75%);
+      @include responsive(small-phone) {
+        display: none;
+      }
+
+      div {
+        text-align: center;
+        min-width: 15rem;
+
+        @include responsive(tablet-landscape) {
+          min-width: 13rem;
+        }
+        @include responsive(tablet-portrait) {
+          min-width: 10rem;
+        }
+        @include responsive(tablet-small) {
+          min-width: 8rem;
+        }
+        @include responsive(phone) {
+          min-width: 6rem;
+        }
+      }
+
+      h2 {
+        color: $color-white;
+        @include responsive(tablet-landscape) {
+          font-size: 1.3rem;
+        }
+        @include responsive(tablet-small) {
+          font-size: 1.1rem;
+        }
       }
 
       svg {
         border-radius: 50%;
         background: #00000063;
-        fill: #ff9251;
+        // fill: #ff9251;
         width: 7.5rem;
         height: 7.5rem;
         padding: 1.6rem;
         transform: translateY(-1rem);
         box-shadow: 0 0 3pt 2pt #ff9251;
+
+        &#medicine {
+          fill: red;
+        }
+        &#safety {
+          fill: blue;
+        }
+        &#culinary {
+          fill: white;
+        }
+        &#manufacturing {
+          fill: #ff9251;
+        }
+        &#startups {
+          fill: rgb(255, 0, 255);
+        }
+        &#hospitality {
+          fill: yellow;
+        }
+        &#iot {
+          fill: green;
+        }
+
+        @include responsive(tablet-landscape) {
+          width: 5.5rem;
+          height: 5.5rem;
+        }
+        @include responsive(phone) {
+          width: 4rem;
+          height: 4rem;
+          padding: .6rem;
+        }
       }
     }
 }
@@ -471,7 +525,7 @@
     }
 
     &--events {
-      background: $color-offwhite;
+      background: $color-white;
       padding: 3rem 2rem 0 3rem;
       
     }
@@ -488,6 +542,10 @@
       width: 50%;
       margin-bottom: 3rem;
       padding-bottom: 3rem;
+
+      @include responsive(phone) {
+        width: 100%;
+      }
     }
 
     &__title {

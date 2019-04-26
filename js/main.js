@@ -188,14 +188,14 @@
 
   listOfEvents.forEach(function(ev) {
     let newEvent = $(`
+      <div class="section__flex-item flyer">
+        <img src="img/${ev.flyer}"/>
+      </div>
       <div class="section__flex-item info">
         <h3 class="info__date">${ev.date.toUpperCase()}</h3>
         <h3 class="info__time">${ev.time.toUpperCase()}</h3>
         <h1 class="info__title">${ev.title}</h1>
         <p class="info__text"> ${ev.text} </p>
-      </div>
-      <div class="section__flex-item flyer">
-        <img src="img/${ev.flyer}"/>
       </div>
     `);
 

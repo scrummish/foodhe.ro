@@ -1,6 +1,10 @@
 .flyer {
     border-bottom: 1px solid $color-grey;
 
+    @include responsive(phone) {
+        border-bottom: none;
+    }
+
     img {
         max-width: 80%;
         height: auto;
@@ -29,7 +33,7 @@
     &__title {
         color: $color-orange;
         font-size: 3rem;
-        margin: 1rem 0 1rem 1rem;
+        margin: 1rem 0;
     }
 
     &__text {
