@@ -974,20 +974,13 @@ header {
       z-index: 10;
       max-width: 100rem;
       margin: 0 auto; }
-      @media only screen and (max-width: 48em) {
-        .hero__title h1 {
-          font-size: 2rem; } }
       @media only screen and (max-width: 32.5em) {
         .hero__title h1 {
-          font-size: 1.6rem;
           padding: 0; } }
       @media only screen and (max-width: 26.75em) {
         .hero__title h1 {
           text-transform: none;
-          font-size: 2rem;
-          padding: .3rem 0 0 0;
-          font-weight: normal;
-          color: #fff; } }
+          font-weight: normal; } }
     .hero__title h2 {
       display: inline-block;
       color: #fff;
@@ -1000,8 +993,7 @@ header {
           font-size: 1.2rem; } }
       @media only screen and (max-width: 26.75em) {
         .hero__title h2 {
-          color: #ff9251;
-          font-size: 3.5rem;
+          font-size: 2rem;
           padding: 1.8rem 0; } }
   .hero__content {
     z-index: 1000;
@@ -1040,25 +1032,12 @@ header {
     .hero__content svg {
       border-radius: 50%;
       background: #00000063;
+      fill: #ff9251;
       width: 7.5rem;
       height: 7.5rem;
-      padding: 1.6rem;
+      padding: .6rem;
       transform: translateY(-1rem);
       box-shadow: 0 0 3pt 2pt #ff9251; }
-      .hero__content svg#medicine {
-        fill: red; }
-      .hero__content svg#safety {
-        fill: blue; }
-      .hero__content svg#culinary {
-        fill: white; }
-      .hero__content svg#manufacturing {
-        fill: #ff9251; }
-      .hero__content svg#startups {
-        fill: magenta; }
-      .hero__content svg#hospitality {
-        fill: yellow; }
-      .hero__content svg#iot {
-        fill: green; }
       @media only screen and (max-width: 75em) {
         .hero__content svg {
           width: 5.5rem;

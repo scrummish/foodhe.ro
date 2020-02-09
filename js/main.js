@@ -158,50 +158,52 @@
 
         Last Step: Add the flyer to the img folder on godaddy
     */
-  let listOfEvents = [
-    // place your new event in here
+  let listOfEvents = [ // Do not erase anything on this line
+    // place your new event in here (below)
     {
-      date: 'october 31st, 2019',
+      date: 'may, 2019 - 6 weeks',
       dateSpanish: 'spanish date',
-      time: '7pm-11pm',
+      time: '9am-1pm',
       timeSpanish: 'spanish time',
-      title: 'Halloween Party',
+      title: 'Diplomado De Reposteria',
       titleSpanish: 'spanish title',
-      text: 'Join us for blah blah blah',
+      text: '',
       textSpanish: 'spanish text',
-      flyer: 'nameOfFlyer.jpg'
+      flyer: 'ReposteriaFlyer.png'
     },
     {
-      date: 'october 31st, 2019',
+      date: 'May 6th - jUNE 10TH',
       dateSpanish: 'spanish date',
-      time: '7pm-11pm',
+      time: '5pm-8pm',
       timeSpanish: 'spanish time',
-      title: 'Halloween Party',
+      title: 'Food Entrepeneurs Bootcamp',
       titleSpanish: 'spanish title',
-      text: 'Join us for blah blah blah',
+      text: '',
       textSpanish: 'spanish text',
-      flyer: 'testing.jpg'
+      flyer: 'VendorsKitchen2.png'
     },  
-  ];
+  ]; // Do not erase anything on this line
 
   // Don't touch anything below this line //
-
-  listOfEvents.forEach(function(ev) {
-    let newEvent = $(`
-      <div class="section__flex-item flyer">
-        <img src="img/${ev.flyer}"/>
-      </div>
-      <div class="section__flex-item info">
-        <h3 class="info__date">${ev.date.toUpperCase()}</h3>
-        <h3 class="info__time">${ev.time.toUpperCase()}</h3>
-        <h1 class="info__title">${ev.title}</h1>
-        <p class="info__text"> ${ev.text} </p>
-      </div>
-    `);
-
-    $('#events').append(newEvent);
-  });
-
+  if (listOfEvents.length > 0){
+    listOfEvents.forEach(function(ev) {
+      let newEvent = $(`
+        <div class="section__flex-item flyer">
+          <img src="img/${ev.flyer}"/>
+        </div>
+        <div class="section__flex-item info">
+          <h3 class="info__date">${ev.date.toUpperCase()}</h3>
+          <h3 class="info__time">${ev.time.toUpperCase()}</h3>
+          <h1 class="info__title">${ev.title}</h1>
+          <p class="info__text"> ${ev.text} </p>
+        </div>
+      `);
+  
+      $('#events').append(newEvent);
+    }); 
+  } else {
+    $('#events-section').css('display', 'none');
+  }
   /**************** END OF EVENTS SECTION ***************/
 
   const translator = {
